@@ -1,14 +1,3 @@
-cypress/screenshots
-
-# compiled output
-/dist
-/tmp
-/out-tsc
-
-# dependencies
-/node_modules
-/cypress/dist
-
 # IDEs and editors
 /.idea
 .project
