@@ -1,0 +1,376 @@
+.buisness-services {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+}
+
+/* About Combinvest description */
+.conbinvest-title-img {
+  height: 69rem;
+  background: url('../assets/img/combinvest-hero.jpg') no-repeat center;
+  background-size: cover;
+}
+
+/* Combinvest details */
+.combinvest-info-wrapper {
+  margin: 10rem 0;
+  flex-wrap: wrap;
+}
+
+.combinvest-info-wrapper > * {
+  max-width: 30rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .combinvest-info-wrapper {
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .combinvest-info-wrapper > * {
+    max-width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .buisness-services {
+    right: 1rem;
+    bottom: 96%;
+  }
+
+  .conbinvest-title-img {
+    background-position: 60%;
+    height: 40.8rem;
+  }
+
+  .combinvest-info-wrapper {
+    margin: 2rem 0;
+    height: 34rem;
+  }
+
+  .combinvest-info-wrapper * {
+    max-width: 40rem;
+  }
+}
+
+/* Combinvest offers */
+.offers-titles {
+  grid-column: 1 / 3;
+}
+
+.individual-advice {
+  max-width: 68rem;
+  margin: 5rem auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.individual-advice p {
+  max-width: 42rem;
+}
+
+.individual-advice img {
+  width: 180px;
+}
+
+.offer-img {
+  grid-column: 2;
+  grid-row: 2 / 3;
+  background: url('../assets/img/infografik1.jpg') no-repeat center;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .offers {
+    margin-top: 4rem;
+  }
+
+  .offers-titles {
+    grid-column: 1;
+    align-self: center;
+    line-height: 95px;
+  }
+
+  .offer-img {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    height: 42rem;
+    background-size: cover;
+  }
+
+  .offers-text {
+    grid-column: 1 / 3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .offers {
+    margin-top: 4rem;
+  }
+
+  .individual-advice {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 4rem 0;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+  }
+
+  .individual-advice p {
+    max-width: 42rem;
+    margin-left: 3rem;
+    margin-top: -4rem;
+  }
+
+  .individual-advice p span {
+    font-size: 14px;
+    width: 16rem;
+  }
+
+  .offers-titles {
+    grid-column: 1;
+  }
+
+  .offer-img {
+    grid-column: 1;
+    min-height: 38rem;
+  }
+}
+/*End of Combinvest offers */
+
+/* Jobs */
+.jobs-wrapper {
+  background-color: var(--purple);
+  width: 100%;
+  margin: 0 auto;
+  height: 57.4rem;
+  padding: 7rem 0 11rem;
+  flex-direction: column;
+}
+
+.jobs-wrapper h3 {
+  text-decoration: underline;
+}
+
+/* The team */
+.team-container {
+  overflow: hidden;
+}
+
+.team-departments {
+  margin: 5rem 0 6rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-departments .arrow-right {
+  width: 10.4rem;
+}
+
+.team-departments .arrow-right::after {
+  width: 10px;
+  height: 10px;
+}
+
+.team-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.team-specialist {
+  min-width: 46.9rem;
+  height: 65.6rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team {
+  width: calc(100% + 20rem);
+  margin-bottom: 10rem;
+  white-space: nowrap;
+  overflow: scroll;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.team.active-team {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.team::-webkit-scrollbar {
+  width: 0px;
+}
+
+.team > * {
+  margin-right: 2.4rem;
+}
+
+.team-specialist-1,
+.team-specialist-2,
+.team-specialist-3 {
+  position: relative;
+  background: grey;
+  width: 100%;
+  height: 48.4rem;
+}
+
+.team-specialist > h3,
+.team-specialist > span {
+  margin: 3rem 0 1rem;
+}
+
+.foundation-mark > span {
+  position: absolute;
+  top: 60%;
+}
+
+.foundation-mark > h3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foundation-mark {
+  position: absolute;
+  top: 24.2rem;
+  right: -1.2rem;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20.8rem;
+  width: 18rem;
+  align-items: center;
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  -webkit-clip-path: url('#foundationMark');
+  clip-path: url('#foundationMark');
+  z-index: 1;
+}
+
+.foundation-purple {
+  background: var(--purple);
+  color: #000000;
+}
+
+.foundation-black {
+  background: #000000;
+  color: var(--purple);
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1168px) {
+  .team-btns {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .team-btns button {
+    margin-bottom: 2rem;
+  }
+
+  .team-departments {
+    margin-bottom: 4rem;
+  }
+
+  .team-departments a {
+    margin-bottom: 2rem;
+  }
+
+  .team-specialist {
+    min-width: 41.4rem;
+    height: 55.6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div[class^='team-specialist-'] {
+    height: 38.4rem;
+  }
+
+  .foundation-mark {
+    top: 19.2rem;
+  }
+
+  .team-specialist > h3 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .team-departments {
+    margin: 5rem 0 2rem;
+  }
+
+  .department-title {
+    margin-bottom: 2rem;
+  }
+
+  .team:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .team-specialist {
+    min-width: 23.6rem;
+    height: 35.4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    width: 100%;
+  }
+
+  div[class^='team-specialist-'] {
+    height: 22.8rem;
+  }
+
+  .team-specialist > h3,
+  .team-specialist > span {
+    margin-top: 2rem;
+  }
+
+  .team-specialist > h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-transform: capitalize;
+  }
+
+  .team-specialist > h4,
+  .team-specialist > span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .foundation-mark {
+    top: 10.4rem;
+    height: 13.8rem;
+    width: 12rem;
+  }
+
+  .foundation-mark.executive {
+    clip-path: url('#foundationExecutive');
+  }
+
+  .foundation-mark.advisor {
+    clip-path: url('#foundationAdvisor');
+  }
+
+  .foundation-mark > span {
+    text-decoration: none;
+  }
+}
+/* End of the team */

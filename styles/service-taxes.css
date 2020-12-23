@@ -1,0 +1,51 @@
+/* Taxes details */
+.taxes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.taxes-wrapper > * {
+  margin-right: 4rem;
+  max-width: 38rem;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .taxes-wrapper > * {
+    margin-right: 2rem;
+    max-width: 33rem;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .taxes-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .taxes-wrapper > * {
+    margin-right: 2rem;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .taxes-wrapper {
+    height: 60rem;
+    max-width: 40rem;
+  }
+
+  .taxes-type p {
+    height: 46rem;
+  }
+
+  .taxes-wrapper > * {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .taxes-btns {
+    width: 6rem;
+  }
+}

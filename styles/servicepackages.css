@@ -1,0 +1,261 @@
+.packages-intro {
+  margin-top: 4rem;
+}
+
+.packages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11rem;
+}
+
+.package {
+  max-width: 31.6rem;
+  width: 100%;
+}
+
+div[class$='package-img'] {
+  width: 100%;
+  height: 29rem;
+}
+
+.premium-package-img {
+  background: url('../assets/img/premium.jpg') center;
+  background-size: cover;
+}
+
+.comform-package-img {
+  background: url('../assets/img/comfort.jpg') center;
+  background-size: cover;
+}
+
+.starter-package-img {
+  background: url('../assets/img/starter.jpg') center;
+  background-size: cover;
+}
+
+.free-package-img {
+  background: url('../assets/img/free.jpg') center;
+  background-size: cover;
+}
+
+.package-info {
+  height: 84rem;
+  background-color: rgba(172, 219, 221, 0.2);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.package-description,
+.package-includes {
+  margin-top: 2rem;
+}
+
+.package-includes {
+  padding-left: 2rem;
+  position: relative;
+}
+
+.tax-declaration {
+  text-decoration: underline;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 38rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 14px;
+  position: absolute;
+  top: -16rem;
+  left: -1rem;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltiptext:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 10px solid transparent;
+  left: 3.2rem;
+  bottom: -20px;
+}
+
+.close-tooptip {
+  display: none;
+}
+
+.package-includes::before {
+  position: absolute;
+  content: url('../assets/img/know-how.svg');
+  top: 0;
+  left: -4px;
+  transform: translateY(-10%);
+  width: 3rem;
+  height: 3rem;
+}
+
+.package-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.package-btn > button {
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .packages-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .package {
+    max-width: 100%;
+  }
+
+  div[class$='package-img'] {
+    height: 38rem;
+  }
+
+  .package-info {
+    height: 70rem;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .packages-intro {
+    margin-top: 6rem;
+  }
+
+  .packages-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+
+  .package {
+    max-width: 100%;
+  }
+
+  div[class$='package-img'] {
+    height: 32rem;
+  }
+
+  .package-info {
+    height: 78rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .packages-intro {
+    margin-top: 0;
+    text-align: initial;
+  }
+
+  .packages-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, max-content);
+    justify-items: center;
+    margin: 0;
+  }
+
+  .package {
+    max-width: 60rem;
+  }
+
+  .package-info {
+    background-color: transparent;
+    height: max-content;
+    padding: 2rem;
+  }
+
+  div[class$='package-img'] {
+    height: 28rem;
+  }
+
+  .package-text {
+    padding-bottom: 4rem;
+  }
+
+  .package-text > h2 {
+    font-size: 18px;
+  }
+
+  .package-description {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+
+  .tooltip {
+    display: block;
+    visibility: visible;
+  }
+
+  .tooltiptext {
+    display: none;
+    visibility: visible;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 0;
+    padding: 8rem 14px 2rem;
+    position: fixed;
+    top: 60vh;
+    bottom: 0;
+    left: 0;
+  }
+
+  .tooltip-active {
+    display: inline-block;
+  }
+
+  .close-tooptip {
+    position: absolute;
+    top: 24px;
+    left: calc(50% - 8px);
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .package-includes::before {
+    position: absolute;
+    content: url('../assets/img/know-how.svg');
+    top: 0;
+    left: -4px;
+    transform: translateY(-10%);
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .package-btn h4 {
+    text-align: initial;
+    width: 28rem;
+    font-size: 16px;
+  }
+
+  .package-btn > button {
+    margin: 2rem 0;
+    height: 4.2rem;
+    padding: 1rem 3rem;
+  }
+}

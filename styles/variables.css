@@ -1,0 +1,17 @@
+html {
+  --lilac: #B8CBFF;
+  --purple: #4D7CFF;
+  --darkblue: #2E4A8C;
+  --blackblue: #17294A;
+  --grey: #DAE6FB;
+  
+  --blue-1: #0970B0;
+  --blue-2: #18A6DE;
+  --blue-3: #4DCCFA;
+  --blue-4: #A2DAF2;
+  --blue-5: #91E5E9;
+}
+
+body {
+  --Montserrat: 'Montserrat', sans-serif;
+}

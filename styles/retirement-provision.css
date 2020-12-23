@@ -1,0 +1,13 @@
+/* Service description */
+.description-title-background {
+  background-color: grey;
+}
+
+.retirement-reviews {
+  padding: 2rem 0 6rem;
+}
+
+.healthcare-info {
+  max-width: 40.7rem;
+  min-width: 20.2rem;
+}

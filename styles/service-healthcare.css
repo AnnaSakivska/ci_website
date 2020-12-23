@@ -1,0 +1,72 @@
+.health-description-text {
+  padding-bottom: 12.2rem;
+}
+
+/* Healthcare details */
+.healthcare-info {
+  max-width: 40rem;
+  min-width: 34rem;
+}
+
+.healthcare-info-img {
+  height: 6.8rem;
+  width: 6.8rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .health-description-text {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .healthcare-info {
+    max-width: 36rem;
+    min-width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .health-description-text {
+    padding-bottom: 2rem;
+  }
+
+  .healthcare-info {
+    height: 26.8rem;
+    max-width: 40.7rem;
+    min-width: 28rem;
+  }
+}
+
+/* Healthcare models */
+.healthcare-model-wrapper {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.healthcare-model-wrapper > * {
+  max-width: 30%;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .healthcare-model-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .healthcare-model-wrapper {
+    width: 100%;
+    max-width: 40rem;
+  }
+
+  .healthcare-model-wrapper > .healthcare-model-text {
+    max-width: 100%;
+    height: 51.6rem;
+  }
+}
+
+/* Virtual support */
+.link-order {
+  order: 3;
+}

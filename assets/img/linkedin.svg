@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2. molecule / Icon SoMe / Footer</title>
+    <defs>
+        <path d="M15,0 C6.71699525,0 0,6.71699525 0,15 C0,23.2830047 6.71699525,30 15,30 C23.2830047,30 30,23.2830047 30,15 C30,6.71699525 23.2830047,0 15,0 Z" id="path-1"></path>
+        <path d="M6.4807817,7.41267297 L6.4807817,14.5781633 L4.09904967,14.5781633 L4.09904967,7.41267297 L6.4807817,7.41267297 Z M12.3268513,7.24449982 C13.8938313,7.24449982 15.0688052,8.26861025 15.0688052,10.4694852 L15.0688052,14.5781633 L12.6873716,14.5781633 L12.6873716,10.7447998 C12.6873716,9.78142272 12.3425196,9.12439833 11.4807626,9.12439833 C10.8228429,9.12439833 10.430986,9.56758763 10.2587838,9.99540702 C10.1958122,10.1485088 10.1804423,10.3624931 10.1804423,10.5766266 L10.1804423,14.5781633 L7.79885946,14.5781633 L7.79910499,14.5259982 C7.79918456,14.508909 7.79928232,14.487772 7.79939656,14.4628115 L7.80026616,14.2689625 C7.8033865,13.5605431 7.8107423,11.7587472 7.81238943,10.1723785 L7.81253266,9.16107721 C7.81168863,8.28963827 7.80788739,7.60727022 7.79885946,7.41267297 L10.1804423,7.41267297 L10.1804423,8.42723323 C10.4969421,7.93897891 11.0632395,7.24449982 12.3268513,7.24449982 Z M5.30580781,3.95833333 C6.12055986,3.95833333 6.62194572,4.49329413 6.6374648,5.1964281 C6.6374648,5.88404299 6.12055986,6.43422445 5.28999029,6.43422445 L5.27447121,6.43422445 C4.47523828,6.43422445 3.95833333,5.88404299 3.95833333,5.1964281 C3.95833333,4.49329413 4.49105583,3.95833333 5.30580781,3.95833333 Z" id="path-3"></path>
+    </defs>
+    <g id="3.-Symbole---Organismus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-organism-/-footer" transform="translate(-849.000000, -169.000000)">
+            <g id="SoMe-Icons-+-Newsletter" transform="translate(727.000000, 169.000000)">
+                <g id="2.-molecule-/-Icon-SoMe-/-Footer" transform="translate(121.000000, 0.000000)">
+                    <g id="4.-color-/-white" transform="translate(1.875000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Group" mask="url(#mask-2)" stroke="#FFFFFF" stroke-width="2">
+                            <g id="4.-color-/-white-secondary">
+                                <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="1.-atom-/-Icons-/-soMe-/-linkedin" transform="translate(7.937500, 6.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" xlink:href="#path-3"></use>
+                        <g id="Group" mask="url(#mask-4)" fill="#000000">
+                            <g id="4.-color-/-black">
+                                <rect id="Rectangle" x="0" y="0" width="19" height="19"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

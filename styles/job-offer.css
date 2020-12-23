@@ -1,0 +1,153 @@
+.offer-intro {
+  margin-top: 14rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 94%, 48% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 94%, 48% 100%, 0 100%);
+}
+
+.position-title {
+  margin: 6.6rem 0 -2rem;
+}
+
+.position-description {
+  margin: 10rem auto 0;
+  width: 84rem;
+}
+
+.position-points {
+  list-style-type: none;
+}
+
+.position-tasks {
+  margin-bottom: 6rem;
+}
+
+.position-points > li {
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.position-points > li:first-child {
+  margin-top: 3rem;
+}
+
+.position-points li:before {
+  content: '- ';
+  position: absolute;
+  margin-left: -20px;
+}
+
+.position-offers li {
+  margin-top: 0;
+}
+
+.recruiter {
+  display: flex;
+  height: 20.8rem;
+  align-items: flex-end;
+}
+
+.recruiter-img {
+  height: 20.8rem;
+  width: 18rem;
+  background: url('../assets/img/combinvest_news.png');
+  background-size: cover;
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  -webkit-clip-path: url('#recruiter');
+  clip-path: url('#recruiter');
+}
+
+.recruiter-info {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding-left: 4rem;
+}
+
+.recruiter-info > span:first-child {
+  margin-bottom: 1rem;
+}
+
+.further-offers {
+  height: 41.8rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .offer-intro {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 96%, 48% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 100%, 50% 96%, 48% 100%, 0 100%);
+  }
+
+  .intro-center {
+    text-align: center;
+  }
+
+  .position-description {
+    margin: 10rem auto 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .offer-intro {
+    margin-top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 54% 100%, 50% 98%, 46% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 54% 100%, 50% 98%, 46% 100%, 0 100%);
+  }
+
+  .offer-intro h2 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .offer-intro p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .offer-intro .position-title {
+    font-size: 18px;
+    margin-bottom: 6rem;
+    font-weight: 800;
+  }
+
+  .position-description {
+    margin: 3rem auto 0;
+    width: 100%;
+  }
+
+  .position-tasks {
+    margin-bottom: 4rem;
+  }
+
+  .position-tasks h4,
+  .position-tasks p,
+  .position-points > li {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .position-points > li:first-child {
+    margin-top: 1rem;
+  }
+
+  .recruiter {
+    height: 11.6rem;
+  }
+
+  .recruiter-img {
+    height: 11.6rem;
+    max-width: 10rem;
+  }
+
+  .recruiter-info {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 2rem;
+  }
+
+  .recruiter-phone {
+    margin-top: -2rem;
+    text-decoration: underline;
+  }
+}

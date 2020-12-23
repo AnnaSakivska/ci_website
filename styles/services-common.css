@@ -1,0 +1,956 @@
+/* Service description */
+.description-title-wrapper {
+  position: relative;
+}
+
+.description-title-background {
+  margin-top: 14rem;
+  width: 100%;
+  height: 58rem;
+}
+
+.description-titles {
+  margin: -15rem 5rem 0;
+  max-width: 88.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.private-vorsorge {
+  padding-bottom: 11rem;
+  max-width: 84.2rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.private-vorsorge h2,
+.private-vorsorge > p {
+  text-align: center;
+}
+
+.private-vorsorge > p {
+  padding-top: 2rem;
+  line-height: 2.8rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .description-titles {
+    margin: -13rem 2rem 0;
+  }
+
+  .private-vorsorge {
+    padding-bottom: 8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .description-title-background {
+    height: 40.8rem;
+    margin-top: 0;
+  }
+
+  .description-titles {
+    margin: -7rem 2rem 0;
+    max-width: 28rem;
+  }
+
+  .vorsorge-frame {
+    height: 30px;
+    width: fit-content;
+    padding: 6px 14px;
+    background-color: #ffffff;
+    color: var(--purple);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .private-vorsorge {
+    padding-bottom: 4rem;
+    max-width: 100%;
+    /* text-align: initial; */
+  }
+
+  .private-vorsorge h2,
+  .private-vorsorge > p {
+    text-align: inherit;
+  }
+
+  .private-vorsorge h2 {
+    font-size: 18px;
+  }
+
+  .private-vorsorge > p {
+    padding-top: 2rem;
+    line-height: 2.6rem;
+    font-size: 16px;
+  }
+}
+/* End of Service desc*/
+
+/* Service opportunities section */
+.service-opportunity-1,
+.service-opportunity-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: max-content min-content;
+  grid-column-gap: 3rem;
+  grid-row-gap: 4rem;
+}
+
+.service-opportunity-2 {
+  margin-bottom: 11rem;
+}
+
+.service-opportunity-1-text {
+  grid-column: 1;
+}
+
+.service-opportunity-2-text {
+  grid-column: 2;
+}
+
+.service-opportunity-1 p {
+  grid-row: 2;
+}
+
+.service-opportunity-1 p {
+  grid-row: 2;
+}
+
+.break-padding {
+  display: inline-block;
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .service-opportunity-1-text h1,
+  .service-opportunity-2-text h1 {
+    font-size: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .service-opportunity-2 {
+    margin-bottom: 8rem;
+  }
+
+  .service-opportunity-1-text,
+  .service-opportunity-2-text {
+    grid-column: 1 / 3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .service-opportunity-1,
+  .service-opportunity-2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-row-gap: 2rem;
+  }
+
+  .service-opportunity-2 {
+    margin-bottom: 4.4rem;
+  }
+
+  .service-opportunity-1-text,
+  .service-opportunity-2-text {
+    grid-column: 1;
+  }
+
+  .service-opportunity-1 p,
+  .service-opportunity-2 p {
+    grid-row: 3;
+    font-size: 16px;
+  }
+}
+/* End of service opportunitis */
+
+/* Chat sections with phone and without/with text columns   */
+.chat {
+  position: relative;
+  padding: 10rem 0;
+  width: 100%;
+  /* max-width: 1600px; */
+  margin: 0 auto;
+  background: linear-gradient(270deg, rgba(77, 124, 255, 0) 0%, rgba(77, 124, 255, 0.8) 50%, #4d7cff 100%),
+    url('../assets/img/combinvest_news.png') repeat;
+}
+
+.chat-text > *,
+.chat-text-center > * {
+  margin-bottom: 3rem;
+}
+
+.chat-text-center {
+  padding-bottom: 3rem;
+  text-align: center;
+  width: 84rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.chat-text {
+  max-width: 50%;
+  padding-bottom: 1.6rem;
+}
+
+.blue-4-text {
+  color: var(--blue-4);
+}
+
+.get-consultancy {
+  position: relative;
+  width: 31rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-img-wrapper {
+  position: absolute;
+  top: -10%;
+  left: 60%;
+}
+
+.phone-consultancy-img {
+  width: 46.8rem;
+}
+
+.chatting {
+  position: absolute;
+  top: 12rem;
+  left: 5.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25rem;
+  height: 51.2rem;
+}
+
+.chatting > * {
+  padding: 15px;
+  width: max-content;
+  max-width: 100%;
+}
+
+.chatting-replies {
+  border-radius: 7px;
+  background-color: var(--blackblue);
+}
+
+.chatting-asking {
+  margin-right: 6px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  align-self: flex-end;
+}
+
+.speech-bubble-reply::before,
+.speech-bubble-ask::before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid var(--blackblue);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.speech-bubble-reply:before {
+  left: -17px;
+}
+
+.speech-bubble-ask::before {
+  right: -12px;
+  border-right: 10px solid #ffffff;
+  transform: rotate(180deg);
+}
+
+.chatting-btn {
+  height: 42px;
+  width: 192px;
+  align-self: center;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .chat {
+    position: relative;
+    padding: 7rem 0;
+  }
+
+  .chat-text-center {
+    width: 100%;
+  }
+
+  .phone-consultancy-img {
+    display: none;
+  }
+
+  .chat-text {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .chat {
+    position: relative;
+    padding: 4rem 2rem;
+    background: linear-gradient(to top, rgba(77, 124, 255, 0) 0%, rgba(77, 124, 255, 0.8) 50%, #4d7cff 100%),
+      url('../assets/img/combinvest_news.png') repeat;
+    background-size: 200%;
+  }
+
+  .chat-text {
+    max-width: 100%;
+  }
+
+  .chat-text-center {
+    padding-bottom: 0;
+  }
+
+  .chat-text > * {
+    margin-bottom: 2rem;
+  }
+
+  .chat-text-center h2 {
+    font-size: 18px;
+  }
+
+  .chat-text-center p {
+    font-size: 16px;
+  }
+
+  .get-consultancy {
+    width: 100%;
+    justify-content: flex-end;
+    font-size: 12px;
+  }
+
+  .get-consultancy span {
+    font-size: 12px;
+  }
+}
+/* End of chat */
+
+/* Models section */
+.model-text p {
+  line-height: 2.8rem;
+}
+
+.model-text p {
+  padding-bottom: 12px;
+}
+
+.model-wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.model-text {
+  max-width: 41rem;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.model-text h2 {
+  padding-bottom: 2.2rem;
+}
+
+.model-text a {
+  height: 3rem;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .model-text {
+    max-width: 36rem;
+  }
+
+  .model-text p {
+    line-height: 2.6rem;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .model-text {
+    width: 34rem;
+    display: grid;
+    grid-template-rows: 4rem 1fr;
+  }
+
+  .model-text h2 {
+    font-size: 18px;
+    padding-bottom: 2.2rem;
+  }
+
+  .model-text p {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+
+  .model-text p {
+    line-height: 2.6rem;
+  }
+
+  .reviews-link-text {
+    font-size: 12px;
+  }
+
+  .t-arrow {
+    max-width: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .model-wrapper {
+    position: relative;
+  }
+
+  .model-text {
+    display: none;
+  }
+
+  .active-model-text {
+    margin: 0 auto;
+    padding: 4.4rem 2rem 5rem;
+    min-height: 25.4rem;
+    max-height: 50.6rem;
+    display: grid;
+    max-width: 40rem;
+    background-color: var(--darkblue);
+    border-radius: 5px;
+  }
+
+  .active-model-text h2 {
+    font-size: 14px;
+  }
+
+  .active-model-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .reviews-link-text {
+    font-size: 12px;
+  }
+}
+/* End of models */
+
+/* Service details */
+.insurance-info-title {
+  width: max-content;
+  margin: 0 auto 9rem;
+}
+
+.service-info-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.service-info {
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-row-gap: 1rem;
+  flex-direction: column;
+  justify-content: stretch;
+
+  margin-right: 1rem;
+  /* max-width: 40rem; */
+}
+
+.service-info-img {
+  height: 6.8rem;
+  width: 6rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .service-info-wrapper {
+    margin: 2rem 0;
+  }
+
+  .service-info {
+    justify-content: flex-start;
+  }
+
+  .service-info h3 {
+    padding: 1rem 0;
+  }
+
+  .service-info p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .info-btns-container,
+  .model-text-btns {
+    position: relative;
+  }
+
+  .service-info-wrapper {
+    margin: 2rem auto;
+    max-width: 40rem;
+  }
+
+  .service-info-wrapper > * {
+    max-width: 100%;
+  }
+
+  .service-info {
+    display: none;
+  }
+
+  .active-service-info {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 28rem;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(46, 74, 140, 0.3);
+  }
+
+  .active-service-info p {
+    padding: 0 3rem 3rem;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .active-service-info h3 {
+    padding: 0 1.6rem;
+  }
+
+  .service-info-btns,
+  .model-text-btns {
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    width: 5rem;
+  }
+
+  .service-info-btn,
+  .model-text-btn {
+    width: 2px;
+    position: relative;
+  }
+
+  .service-info-btn:after,
+  .model-text-btn:after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background: #000000;
+    border-radius: 50%;
+  }
+
+  .active-info-btn:after,
+  .active-model-btn:after {
+    position: absolute;
+    content: '';
+    height: 10px;
+    width: 10px;
+    top: -1px;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 50%;
+  }
+
+  .model-text-btns {
+    bottom: 2rem;
+  }
+
+  .model-text-btn:after {
+    background: #ffffff;
+  }
+
+  .active-model-btn:after {
+    background: #ffffff;
+    border-color: #ffffff;
+    background-color: var(--darkblue);
+  }
+}
+/* End of service detainls */
+
+/* Virtual-support */
+.virtual-support {
+  margin-top: 11rem;
+}
+
+.virtual-support-texts {
+  margin-bottom: 6rem;
+  max-width: 60%;
+}
+
+.virtual-support-text {
+  margin: 6rem 0 3rem;
+}
+
+.support-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.support {
+  height: 64rem;
+  width: 100%;
+  max-width: 41rem;
+  background-color: #ffffff;
+}
+
+.support-text {
+  height: 11rem;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px 16px 0;
+}
+
+div[class^='support-picture'] {
+  position: relative;
+  height: 50.2rem;
+  width: 100%;
+  background: linear-gradient(to top, rgba(77, 124, 255, 0) 0%, rgba(77, 124, 255, 0.8) 50%, #4d7cff 100%),
+    url('../assets/img/combinvest_news.png') repeat;
+  background-size: 200%;
+}
+
+div[class^='support-picture'] h2 {
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  transform: translate(-50%);
+}
+
+.support-name {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  bottom: 2rem;
+  transform: translate(-50%);
+  height: 42px;
+  width: 218px;
+  border-radius: 21px;
+  background-color: #ffffff;
+}
+
+.support-text p {
+  align-items: center;
+}
+
+.support-icon {
+  height: 18px;
+  width: 18px;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .support {
+    height: 59rem;
+    width: 100%;
+    max-width: 36rem;
+  }
+
+  div[class^='support-picture'] {
+    height: 45.2rem;
+  }
+
+  .support-icon {
+    margin-right: 4px;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .virtual-support {
+    margin-top: 8rem;
+  }
+
+  .virtual-support-texts {
+    max-width: 100%;
+  }
+
+  .support-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .support {
+    height: 56rem;
+    width: 100%;
+    max-width: 33rem;
+    background-color: #ffffff;
+  }
+
+  div[class^='support-picture'] {
+    height: 42.2rem;
+    max-width: 100%;
+  }
+
+  div[class^='support-picture'] h2 {
+    font-size: 26px;
+  }
+
+  .support-text {
+    padding: 2rem 1rem;
+  }
+
+  .support-text {
+    height: 11rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 0;
+  }
+
+  .support-text p {
+    font-size: 14px;
+    line-height: 20px;
+    align-items: flex-start;
+  }
+
+  .support-icon {
+    margin-right: 4px;
+  }
+
+  .more-supports-link {
+    text-align: end;
+  }
+
+  .more-supports-link .arrow-right {
+    width: 5.2rem;
+    text-align: end;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .virtual-support {
+    margin-top: 0;
+  }
+
+  .virtual-support-texts {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .virtual-support-text {
+    margin: 2rem 0;
+  }
+
+  .support-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .support {
+    height: 47.8rem;
+    width: 100%;
+    max-width: 40rem;
+    background-color: #ffffff;
+  }
+
+  div[class^='support-picture'] {
+    height: 34.8rem;
+    max-width: 100%;
+  }
+
+  div[class^='support-picture'] h2 {
+    font-size: 20px;
+  }
+
+  .support-text {
+    padding: 2rem 1rem;
+  }
+
+  .support-text {
+    height: 13rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem 0;
+  }
+
+  .support-text p {
+    font-size: 12px;
+    line-height: 20px;
+    align-items: flex-start;
+  }
+
+  .support-icon {
+    margin-right: 4px;
+  }
+
+  .more-supports-link {
+    text-align: end;
+  }
+
+  .more-supports-link .arrow-right {
+    width: 5.2rem;
+    text-align: end;
+  }
+}
+/* End of Virtual-support */
+
+/* Reviews container */
+.review-titles {
+  margin-bottom: 60px;
+}
+
+.reviews-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  height: 58.4rem;
+  /* max-width: 408px; */
+  width: 40.8rem;
+  background-color: var(--purple);
+}
+
+div[class^='review-picture'] {
+  position: relative;
+  height: 44.4rem;
+  width: 100%;
+  background-size: cover;
+}
+
+.review-picture-1 {
+  background: url('../assets/img/immobilien_1.jpg') no-repeat center;
+}
+
+.review-picture-2 {
+  background: url('../assets/img/teil-vollkasko.jpg') no-repeat center;
+}
+
+.review-picture-3 {
+  background: url('../assets/img/verkehrsschutz.jpg') no-repeat left;
+}
+
+.review-text {
+  position: relative;
+  padding: 28px 14px 0;
+}
+
+.reviews-container h4:first-child {
+  margin-bottom: 10px;
+}
+
+.review-theme {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  transform: translateY(-50%);
+  height: 42px;
+  width: 175px;
+  padding: 10px;
+}
+
+.white-review-theme {
+  background-color: #ffffff;
+  color: var(--purple);
+}
+
+.purple-review-theme {
+  background-color: var(--purple);
+  color: #ffffff;
+}
+
+.more-reviews-link {
+  margin-top: 10px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1169px) {
+  .review {
+    height: 51rem;
+    max-width: 36rem;
+    background-color: var(--purple);
+  }
+
+  div[class^='review-picture'] {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .review {
+    max-width: 32%;
+    height: 51rem;
+  }
+
+  div[class^='review-picture'] {
+    height: calc(444px - 10%);
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .review-titles {
+    margin: -2rem 0 20px;
+  }
+
+  .reviews-container {
+    overflow: auto;
+    width: calc(100% + 40px);
+  }
+
+  .reviews-container::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .review {
+    height: 100%;
+    min-width: 208px;
+    background-color: #4d7cff;
+  }
+
+  .review:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  div[class^='review-picture'] {
+    height: 228px;
+    background-size: cover;
+  }
+
+  .review-text {
+    padding: 16px 10px;
+  }
+
+  .reviews-container h4:first-child {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .reviews-container p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .review-theme {
+    left: 10px;
+    height: 30px;
+    width: 129px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .more-reviews-link {
+    order: 7;
+  }
+}
+/* End of Reviews container */

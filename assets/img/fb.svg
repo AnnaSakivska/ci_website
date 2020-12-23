@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2. molecule / Icon SoMe / Footer</title>
+    <defs>
+        <path d="M15,0 C6.71699525,0 0,6.71699525 0,15 C0,23.2830047 6.71699525,30 15,30 C23.2830047,30 30,23.2830047 30,15 C30,6.71699525 23.2830047,0 15,0 Z" id="path-1"></path>
+        <path d="M10.8636458,5.79862847 L11.8754618,5.79862847 L11.8754618,4.03637847 C11.7008993,4.01236458 11.1005521,3.95833333 10.4013785,3.95833333 C8.94253472,3.95833333 7.9431875,4.87594097 7.9431875,6.56245486 L7.9431875,8.11458333 L6.33333333,8.11458333 L6.33333333,10.0846458 L7.9431875,10.0846458 L7.9431875,15.0416667 L9.91694444,15.0416667 L9.91694444,10.0851076 L11.461684,10.0851076 L11.7069028,8.11504514 L9.91648264,8.11504514 L9.91648264,6.75779861 C9.91694444,6.18839236 10.0702639,5.79862847 10.8636458,5.79862847 L10.8636458,5.79862847 Z" id="path-3"></path>
+    </defs>
+    <g id="3.-Symbole---Organismus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.-organism-/-footer" transform="translate(-896.000000, -169.000000)">
+            <g id="SoMe-Icons-+-Newsletter" transform="translate(727.000000, 169.000000)">
+                <g id="2.-molecule-/-Icon-SoMe-/-Footer" transform="translate(167.125000, 0.000000)">
+                    <g id="4.-color-/-white" transform="translate(1.875000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                        <g id="Group" mask="url(#mask-2)" stroke="#FFFFFF" stroke-width="2">
+                            <g id="4.-color-/-white-secondary">
+                                <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="1.-atom-/-Icons-/-soMe-/-linkedin" transform="translate(7.937500, 6.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                        <g id="Group" mask="url(#mask-4)" fill="#000000">
+                            <g id="4.-color-/-black">
+                                <rect id="Rectangle" x="0" y="0" width="19" height="19"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

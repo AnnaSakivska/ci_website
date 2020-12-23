@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Combinvest - Service Retirement Provision</title>
+  <meta name="description" content="Insurance company" />
+  <meta property="og:title" content="Combinvest - Service Retirement Provision" />
+  <meta property="og:description" content="Insurance company" />
+  <meta name="keywords" content="insurance" />
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+<body>
+  <div class="sticky sticky-white">
+    <div class="container header">
+      <img src="./assets/img/logo.svg" alt="logo" class="logo">
+      <ul class="header-navbar">
+        <li><a class="btn primary-dark-btn academy-btn blue-border-btn b-screens-only" href="">Academy</a></li>
+        <li><a class="btn primary-light-btn cockpit-btn b-screens-only" href="">Login MyCockpit</a></li>
+        <li class="flex-wrapper flex-center"><a class="montserrat-18 bold-text de-option b-screens-only" href="">DE</a><a class="b-screens-only arrow-down-link" href=""><span class="menu-arrow-down big-screens-only"></span></a></li>
+        <li class="cup menu-icon"><img src="./assets/img/menu.svg" alt="menu icon" onclick="openMenu()"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="sticky-go-top-wrapper">
+    <div class="cup sticky-go-to-top toTop" onclick="topFunction()" id="toTop"><span class="menu-arrow-up"></span></div>
+    <div class="container">
+      <!-- Slide-Photos -->
+      <div class="slide">
+        <a class="slide-photos slide-first fade slide-photos-active" href="">
+          <span class="montserrat-50 extremelybold-text white-text slide-photo-1">Ich will</span>
+          <span class="montserrat-50 extremelybold-text slide-photo-2">Mir etwas <br> leisten <br> können</span>
+          <span class="montserrat-16 bold-text white-text slide-photo-3">Mit Sparen beginnen</span>
+        </a>
+        <a class="slide-photos slide-second fade" href="">
+          <span class="montserrat-50 extremelybold-text slide-photo-1">Ich will</span>
+          <span class="montserrat-50 extremelybold-text slide-photo-2">auch an <br> morgen <br>denken</span>
+          <span class="montserrat-16 bold-text slide-photo-3">Mit der Vorsorge beginnen</span>
+        </a>
+        <a class="slide-photos slide-third fade" href="">
+          <span class="montserrat-50 extremelybold-text slide-photo-1">Ich will</span>
+          <span class="montserrat-50 extremelybold-text slide-photo-2">an unsere <br> Gesundheit <br>denken</span>
+          <span class="montserrat-16 bold-text slide-photo-3">Krankenkasse optimieren</span>
+        </a>
+        <div class="slider">
+          <span class="slider-item active-slider" onclick="showSlides('slide-photos', 'slider-item', 1, 'slide-photos-active', 'active-slider')"></span>
+          <span class="slider-item" onclick="showSlides('slide-photos', 'slider-item', 2, 'slide-photos-active', 'active-slider')"></span>
+          <span class="slider-item" onclick="showSlides('slide-photos', 'slider-item', 3, 'slide-photos-active', 'active-slider')"></span>
+        </div>
+      </div>
+      <div class="container-2 s-container-2 margin-top-11">
+        <h3 class="subhead-title-25 darkblue-text uppercase subhead-title-margin">Unsere Diensteistungen</h3>
+        <h1 class="head-title-85 line-height-95" onclick="activeteBenefitBtn()">Fixkosten senken, <br> Enträge erhöhen</h1>
+        <!-- Services -->
+        <ul class="flex-wrapper montserrat-16 filtering services-home">
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/retirementprovision-blue.svg" alt="retirement provision icon">
+            <h4 class="montserrat-18 bold-text">&#35; Altersvorsorge</h4>
+            <p class="montserrat-14">Ich will an Morgen denken.</p>
+          </li>
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/healthcare-blue.svg" alt="healthcare icon">
+            <h4 class="montserrat-18 bold-text">&#35; Gesundheit</h4>
+            <p class="montserrat-14">Ich will an unsere Gesundheit denken.</p>
+          </li>
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/savemoney-blue.svg" alt="savemoney icon">
+            <h4 class="montserrat-18 bold-text">&#35; Sparen</h4>
+            <p class="montserrat-14">Ich will mir etwas leisten können.</p>
+          </li>
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/realestate-blue.svg" alt="realestate icon">
+            <h4 class="montserrat-18 bold-text">&#35; Immobilien</h4>
+            <p class="montserrat-14">Ich will meine eigenen vier Wände.</p>
+          </li>
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/insurance-blue.svg" alt="insurance icon">
+            <h4 class="montserrat-18 bold-text">&#35; Versicherung</h4>
+            <p class="montserrat-14">Ich will optimalen Schutz.</p>
+          </li>
+          <li class="services-home-item">
+            <img class="services-icon" src="./assets/img/taxes-blue.svg" alt="taxes icon">
+            <h4 class="montserrat-18 bold-text">&#35; Steuern</h4>
+            <p class="montserrat-14">Ich will das Maximum herausholen.</p>
+          </li>
+        </ul>
+  
+        <!-- Benefits -->
+        <div class="benefits">
+          <div>
+            <h3 class="subhead-title-25 darkblue-text uppercase subhead-title-margin">Sparpotenzial nutzen</h3>
+            <h1 class="head-title-85 line-height-95">Welche Vorteile Dir Combinvest bringt.</h1>
+          </div>
+          <div class="s-screens-only">
+            <div class="mobile-show-note">
+              <input class="show-note__input" id="checked" type="checkbox">
+              <label class="montserrat-14 bold-text show-note-label" for="checked" onclick="showBenefitsNoteMobile()">Mit Combinvest optimieren</label>
+            </div>
+          </div>
+          <div class="benefits-options-1">
+            <div class="benefits-option fade active-benefits-option">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-1"></span>Nahrungsmittel x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum.</p>
+            </div>
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-2"></span>Gesundheit x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-3"></span>Lorem Ipsum x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="benefits-options-2">
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-4"></span>Säule 3a x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-5"></span>Versicherungen x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-6"></span>Wohnen x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="benefits-option fade">
+              <h3 class="montserrat-18 bold-text">
+                <span class="benefits-mark benefits-mark-7"></span>Lorem Ipsum x%
+              </h3>
+              <p class="montserrat-16 line-height-26">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="s-screens-only flex-wrapper flex-center benefits-slider">
+            <span class="benefits-mark-1 benefits-slider-item  active-benefits-slider" onclick="showSlides('benefits-option', 'benefits-slider-item', 1, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-2 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 2, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-3 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 3, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-4 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 4, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-5 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 5, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-6 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 6, 'active-benefits-option', 'active-benefits-slider')"></span>
+            <span class="benefits-mark-7 benefits-slider-item" onclick="showSlides('benefits-option', 'benefits-slider-item', 7, 'active-benefits-option', 'active-benefits-slider')"></span>
+          </div>
+          <div class="benefits-btns purple-text b-screens-only">
+            <button class="cup montserrat-16 bold-text purple-text benefits-btn active-btn" onclick="activeteBenefitBtn()">Ohne Optimierung</button>
+            <button id="show-benefits-note" class="cup montserrat-16 bold-text purple-text benefits-btn" onclick="activeteBenefitBtn()">Optimiert mit Combinvest</button>
+          </div>
+          <div class="benefits-chart-wrapper">
+            <div class="saving-note">
+              <span class="montserrat-16 bold-text darkblue-text">Sparpotenzial</span>
+              <span class="montserrat-28 extremelybold-text darkblue-text">CHF 1’052.–</span>
+              <span class="montserrat-12 darkblue-text">jährlich</span>
+            </div>
+            <div class="benefits-chart" style="position: relative; height:100vh; width:40vw">
+              <canvas id="benefitsChart"></canvas>
+            </div>
+            <div class="montserrat-10 b-screens-only uppercase chart-footnote">
+              <span>
+                <span class="household-icon"></span>
+                <span>2.2 Personen / Haushalt</span>
+              </span>
+              <span>
+                <span class="income-icon"></span>
+                <span>durchschnittliches Einkommen CHF 10’033.–, Stand 2018</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!--Clipped photo section-->
+        <div class="container-3 clipped-wrapper">
+          <div class="clipped-inside margin-top-11"></div>
+          <div class="clipped-text">
+            <p class="montserrat-40 bold-text purple-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, nonumy eirmod et atempor invidunt ut labore et alarem voluptua.</p>
+            <h4 class="montserrat-18 purple-text">Daniel Hamze, Gründer combinvest</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mycombinvest app -->
+    <div class="combinv-app">
+      <div class="container">
+        <div class="white-text combinv-app-text">
+          <h3 class="subhead-title-25 uppercase subhead-title-margin">Mycombinvest app</h3>
+          <h1 class="head-title-55 white-text uppercase line-height-58">Alle relevanten Files an einem Ort</h1>
+          <p class="montserrat-18 line-height-28 thin-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+          <p class="montserrat-18 line-height-28 thin-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          </p>
+          <p class="montserrat-18 line-height-28 thin-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata est Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+        <div class="authorization-btns">
+          <button class="btn primary-dark-btn registration-btn">Registrieren</button>
+          <button class="btn secondary-dark-btn login-btn">Login</button>
+        </div>
+        <div class="cup download-app">
+          <div class="download-app__apple">
+            <img class="apple-icon" src="./assets/img/apple_logo.svg" alt="">
+            <span class="white-text download-app-text">
+              <span class="montserrat-12 small-text">Download on the</span><span class="montserrat-22 bold-text bigger-app-btn-text">App store</span>
+            </span>
+          </div>
+          <div class="cup download-app__goggle">
+            <img class="google-play-icon" src="./assets/img/google-play.svg" alt="">
+            <span class="white-text download-app-text">
+              <span class="montserrat-12 uppercase small-text">Get it on</span><span class="montserrat-22 bold-text bigger-app-btn-text">Google play</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <img class="b-screens-only phone-app-img" src="./assets/img/phone-app.png" alt="app phone"></img>
+    </div>
+
+    <!-- Reviews -->
+    <div class="container s-container-2">
+      <div class="container-2">
+        <div class="padding-top-11 review-titles">
+          <h3 class="subhead-title-25 darkblue-text uppercase subhead-title-margin">Combinvest blog</h3>
+          <h1 class="head-title-85 line-height-95">Wissens- <br> wertes</h1>
+        </div>
+        <div class="reviews-container">
+          <div class="review">
+            <div class="review-picture-1"></div>
+            <div class="white-text review-text">
+              <h4 class="montserrat-18 bold-text line-height-28">Velofahren ist Trend</h4>
+              <p class="montserrat-16 line-height-26">Richtig versichert die Freiheit geniessen. &#129310;</p>
+              <span class="montserrat-16 bold-text purple-text flex-wrapper flex-center review-theme white-review-theme">&#35; Altersvorsorge</span>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-picture-2"></div>
+            <div class="white-text review-text">
+              <h4 class="montserrat-18 bold-text line-height-28">Velofahren ist Trend</h4>
+              <p class="montserrat-16 line-height-26">Richtig versichert die Freiheit geniessen. &#129310;</p>
+              <span class="montserrat-16 bold-text purple-text flex-wrapper flex-center review-theme white-review-theme">&#35; Altersvorsorge</span>
+            </div>
+          </div>
+          <div class="review">
+            <div class="review-picture-3"></div>
+            <div class="white-text review-text">
+              <h4 class="montserrat-18 bold-text line-height-28">Velofahren ist Trend</h4>
+              <p class="montserrat-16 line-height-26">Richtig versichert die Freiheit geniessen. &#129310;</p>
+              <span class="montserrat-16 bold-text purple-text flex-wrapper flex-center review-theme white-review-theme">&#35; Altersvorsorge</span>
+            </div>
+          </div>
+        </div>
+        <a class="more-reviews-link" href="">
+          <span class="arrow-right"></span>
+          <span class="montserrat-16 bold-text reviews-link-text">Alle Beiträge ansehen</span>
+        </a>
+        <div class="flex-wrapper multiple-items partners"></div>
+      </div>
+    </div>
+
+    <!-- Contacts -->
+    <div class="flex-wrapper contacts-wrapper">
+      <div class="flex-wrapper contacts-text-wrapper">
+        <div class="white-text contacts-text">
+          <h3 class="subhead-title-25 uppercase subhead-title-margin">Sparpotenzial nutzen</h3>
+          <h1 class="head-title-55 white-text uppercase line-height-58">Kontakt</h1>
+          <p class="montserrat-18  line-height-28">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata est Lorem ipsum dolor sit amet. 
+          </p>
+          <p class="montserrat-18 line-height-28">Wir helfen Ihnen gerne weiter!</p>
+        </div>
+      </div>
+      <div class="flex-wrapper uppercase montserrat-12 bold-text contact-form">
+        <form class="flex-wrapper form-container" action="">
+          <div class="form-names">
+            <label class="uppercase" for="first-name">Nachname*</label>
+            <input class="montserrat-18" type="text" id="first-name" placeholder="Nachname" required minlength="2">
+            <label class="uppercase" for="last-name">vorname* </label>
+            <input class="montserrat-18" type="text" id="last-name" placeholder="Vorname" required minlength="2">
+          </div>
+          <label for="email" class="">E-mail*</label>
+          <input class="montserrat-18" type="email" id="email" name="email" placeholder="example@email.com" required>
+          <label for="tel" class="">Telefonnummer*</label>
+          <input class="montserrat-18" type="tel" size="12" id="tel" placeholder="+41 xx xxx xx xx" required pattern="[-+]?[0-9]"> 
+          <label for="textarea">Deine Anfrage*</label>
+          <textarea class="montserrat-18" name="request" id="textarea" placeholder="Hier Nachricht eingeben" required></textarea>
+          <button type="submit" class="btn primary-light-btn btn-contact-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer-background">
+      <footer class="white-text footer">
+        <h2 class="montserrat-24 extrabold-text white-text uppercase footer__title">Kontakt</h2>
+        <div class="footer__left">
+          <p class="montserrat-14 thin-text footer__contact">
+            <span>Station-Ost 7 </span><span class="s-screens-only"> | </span><span> CH-6023 Rothenburg</span>
+            <br class="s-screens-only"> 
+            <span>+41 62 561 11 22 </span> <span class="s-screens-only"> | </span><span> info@combinvest.ch </span>
+          </p>
+          <div class="white-text montserrat-14 thin-text footer__links">
+            <a href="">Kontakt</a>
+            <a href="">Media & Presse</a>
+            <a href="">Impressum</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__media">
+            <div class="media-wrapper">
+              <span class="montserrat-14 thin-text follow-text">Follow us on</span>
+              <a href=""><img src="./assets/img/insta.svg" alt="Instagram icon"></a>
+              <a href=""><img src="./assets/img/fb.svg" alt="Facebook icon"></a>
+              <a href=""><img src="./assets/img/linkedin.svg" alt="Linkedin icon"></a>
+            </div>
+            <a class="more-info" href="">
+              <span class="arrow-right purple-arrow"></span>
+              <span class="montserrat-16 bold-text white-text more-info-text">Newsletter abonnieren</span>
+            </a>
+          </div>
+          <img class="footer__logo" src="./assets/img/logo-footer.svg" alt="Logo">
+        </div>
+        <p class="montserrat-14 thin-text footer__end-note">&#169; combinvest AG 2020</p>
+      </footer>
+    </div>
+  </div>
+  <!-- Menu -->
+  <div class="menu menu-background">
+    <div class="container">
+      <div class="clipped-area">
+        <svg>
+          <defs>
+            <clipPath id="clippedArea" clipPathUnits="objectBoundingBox">
+              <polygon points="0 0, 1 0, 1 1, 0.8 1, 0.5 0.76, 0.2 1, 0 1" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="header header-blue-back">
+          <img src="./assets/img/logo_white.svg" alt="logo" class="logo">
+          <ul class="header-navbar menu-header-nav">
+            <li class="b-screens-only menu-academy-btn"><a class="btn primary-light-btn academy-btn white-border-btn" href="">Academy</a></li>
+            <li class="b-screens-only menu-cockpit-btn"><a class="btn primary-dark-btn cockpit-btn" href="">Login MyCockpit</a></li>
+            <li class="close-container"><span class="close cup" onclick="closeMenu()"></span></li>
+          </ul>
+        </div>
+        <div class="services-menu-wrapper">
+          <h1 class="subhead-title-25 bold-text white-text">Dienstleistungen</h1>
+          <ul class="flex-wrapper flex-center montserrat-16 services__menu">
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/retirementprovision.svg" alt="retirement provision icon"><span class="cup">VORSORGE</span></li>
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/healthcare.svg" alt="healthcare icon"><span class="cup">GESUNDHEIT</span></li>
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/realestate.svg" alt="realestate icon"><span class="cup">IMMOBILIEN</span></li>
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/savemoney.svg" alt="savemoney icon"><span class="cup">SPAREN</span></li>
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/insurance.svg" alt="insurance icon"><span class="cup">VERSICHERUNGEN</span></li>
+            <li class="flex-wrapper flex-center"><img class="cup" src="./assets/img/taxes.svg" alt="taxes icon"><span class="cup">STEUERN</span></li>
+          </ul>
+        </div>
+        <ul class="flex-wrapper flex-center subhead-title-25 white-text blog-fag">
+          <li class="cup">Combinvest</li>
+          <li class="cup">Blog</li>
+          <li class="cup">FAQ</li>
+          <li class="cup">Servicepakete</li>
+        </ul>
+        <button class="b-screens-only btn primary-dark-btn trinveso-btn">Triveso</button>
+        <div class="b-screens-only montserrat-16 semibold-text white-text contacts">
+          <span class="">Station-Ost 7</span>
+          <span class="">CH-6023 Rothenburg</span>
+          <span class="">+41 62 561 11 22</span>
+        </div>
+      </div>
+      <div class="b-screens-only jobs">
+        <div class="arrow-down"></div>
+        <h2 class="cup subhead-title-25 bold-text white-text">WE'RE HIRING</h2>
+        <h4 class="cup montserrat-16 semibold-text white-text">Jobs</h4>
+      </div>
+    </div>
+    <ul class="s-screens-only  menu-btns-background">
+      <li class="menu-academy-btn"><a class="btn primary-light-btn academy-btn white-border-btn" href="">Academy</a></li>
+      <li class="menu-cockpit-btn"><a class="btn primary-dark-btn cockpit-btn" href="">Login MyCockpit</a></li>
+    </ul> 
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script type="text/javascript" src="./js/script-slick.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/home.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+/* Hedaings */
+.head-title-100 {
+  font-family: var(--Montserrat);
+  font-size: 100px;
+  color: var(--darkblue);
+  font-weight: 800;
+}
+
+.head-title-85 {
+  font-family: var(--Montserrat);
+  font-size: 85px;
+  color: var(--darkblue);
+  font-weight: 800;
+}
+
+.head-title-55 {
+  font-family: var(--Montserrat);
+  font-size: 55px;
+  color: var(--blue-4);
+  font-weight: 800;
+}
+
+.subhead-title-25 {
+  font-family: var(--Montserrat);
+  font-size: 25px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .head-title-100 {
+    font-size: 80px;
+  }
+
+  .head-title-85 {
+    font-size: 50px;
+  }
+
+  .head-title-55 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .head-title-100 {
+    font-size: 35px;
+  }
+
+  .head-title-85 {
+    font-size: 35px;
+  }
+
+  .head-title-55 {
+    font-family: var(--Montserrat);
+    font-size: 35px;
+    color: var(--blue-4);
+    font-weight: 800;
+  }
+
+  .subhead-title-25 {
+    font-size: 18px;
+  }
+}
+
+/* Paragraph */
+.montserrat-18 {
+  font-family: var(--Montserrat);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Other */
+.montserrat-10 {
+  font-family: var(--Montserrat);
+  font-size: 10px;
+}
+
+.montserrat-12 {
+  font-family: var(--Montserrat);
+  font-size: 12px;
+}
+
+.montserrat-14 {
+  font-family: var(--Montserrat);
+  font-size: 14px;
+}
+
+.montserrat-16 {
+  font-family: var(--Montserrat);
+  font-size: 16px;
+}
+
+.montserrat-22 {
+  font-family: var(--Montserrat);
+  font-size: 22px;
+}
+
+.montserrat-24 {
+  font-family: var(--Montserrat);
+  font-size: 24px;
+}
+
+.montserrat-28 {
+  font-family: var(--Montserrat);
+  font-size: 28px;
+}
+
+.montserrat-30 {
+  font-family: var(--Montserrat);
+  font-size: 30px;
+}
+
+.montserrat-38 {
+  font-family: var(--Montserrat);
+  font-size: 38px;
+}
+
+.montserrat-40 {
+  font-family: var(--Montserrat);
+  font-size: 40px;
+}
+
+.montserrat-50 {
+  font-family: var(--Montserrat);
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .montserrat-50 {
+    font-family: var(--Montserrat);
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .montserrat-28 {
+    font-family: var(--Montserrat);
+    font-size: 20px;
+  }
+
+  .montserrat-40 {
+    font-family: var(--Montserrat);
+    font-size: 22px;
+  }
+}
+
+/* Text style */
+.white-text {
+  color: #ffffff;
+}
+
+.darkblue-text {
+  color: var(--darkblue);
+}
+
+.purple-text {
+  color: var(--purple);
+}
+
+.thin-text {
+  font-weight: 300;
+}
+
+.semibold-text {
+  font-weight: 500;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.extrabold-text {
+  font-weight: 800;
+}
+
+.extremelybold-text {
+  font-weight: 900;
+}
+
+.line-height-95 {
+  line-height: 95px;
+}
+
+.line-height-58 {
+  line-height: 58px;
+}
+
+.line-height-32 {
+  line-height: 32px;
+}
+
+.line-height-28 {
+  line-height: 28px;
+}
+
+.line-height-26 {
+  line-height: 26px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .line-height-95 {
+    line-height: 75px;
+  }
+
+  .line-height-58 {
+    line-height: 48px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .line-height-95 {
+    line-height: 45px;
+  }
+
+  .line-height-58 {
+    line-height: 40px;
+  }
+}
