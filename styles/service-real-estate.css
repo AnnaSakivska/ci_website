@@ -58,23 +58,6 @@
   padding-bottom: 2.4rem;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .mortgage-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, max-content);
-    grid-gap: 16px;
-  }
-
-  .mortgage-text {
-    height: 26rem;
-  }
-
-  .mortgage-text:nth-child(4) {
-    grid-column: 1 / 3;
-    height: 11rem;
-  }
-}
-
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .mortgage {
     padding-top: 0;
@@ -87,7 +70,7 @@
   }
 
   .mortgage-text {
-    height: 30rem;
+    height: 22rem;
   }
 
   .mortgage-text:nth-child(4) {

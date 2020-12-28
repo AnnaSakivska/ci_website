@@ -1,0 +1,230 @@
+.academy-navbar {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-column-gap: 2rem;
+  align-items: center;
+}
+
+.academy-title-background {
+  background-color: #f4b349;
+  margin-top: 0;
+  width: 100%;
+  height: 58rem;
+}
+
+.academy-headings {
+  position: absolute;
+  margin-top: -16rem;
+}
+
+.academy-title {
+  margin-top: -6rem;
+}
+
+.menu-header {
+  position: relative;
+}
+
+.academy-menu {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+  right: 0;
+}
+
+.academy-menu li {
+  list-style-type: none;
+  padding-right: 3rem;
+}
+
+.advisor {
+  position: absolute;
+  width: 38rem;
+  top: 10.6rem;
+  right: 19rem;
+  color: #ffff2c;
+}
+
+.advisor-initials {
+  display: inline-block;
+  margin-top: 8.6rem;
+  color: #ffff26;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .advisor {
+    width: 32rem;
+    top: 6rem;
+    right: 11rem;
+  }
+
+  .advisor-initials {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .academy-navbar {
+    list-style-type: none;
+    display: block;
+  }
+
+  .academy-title-background {
+    height: 48.8rem;
+    background-position: 66%;
+  }
+
+  .academy-headings {
+    margin: -10rem 2rem 0;
+  }
+
+  .academy-title {
+    margin-left: 2rem;
+  }
+
+  .advisor {
+    width: 17.2rem;
+    top: 4.2rem;
+    right: 2rem;
+  }
+
+  .advisor-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .advisor-initials {
+    margin-top: 1.6rem;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .academy-description {
+    text-align: initial;
+  }
+}
+
+/* Academy range */
+.academy-range {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-column-gap: 11rem;
+  grid-row-gap: 6rem;
+}
+
+.range-description {
+  grid-row: 2;
+}
+
+.contact-academy {
+  margin-top: 6.4rem;
+}
+
+.academy-hamze {
+  grid-row: 2;
+  margin-top: -4rem;
+  align-self: center;
+}
+
+.academy-hamze img {
+  width: 18rem;
+}
+
+@media only screen and (max-width: 1168px) and (min-width: 768px) {
+  .academy-range {
+    grid-column-gap: 8rem;
+  }
+
+  .range-titles {
+    grid-column: 1 / 3;
+  }
+
+  .academy-hamze {
+    grid-row: 2;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .academy-range {
+    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 2rem;
+  }
+
+  .range-titles {
+    grid-column: 1;
+  }
+
+  .academy-hamze {
+    grid-row: 3;
+    margin-top: 0;
+  }
+
+  .academy-hamze img {
+    margin-left: -2rem;
+  }
+
+  .contact-academy {
+    margin: 4rem auto 0;
+  }
+}
+/* End of Academy range */
+
+/* Training offer & E-learning*/
+.training-options {
+  margin-top: 6rem;
+}
+
+.taining-option {
+  max-width: 51.8rem;
+}
+
+.taining-option:first-child {
+  margin-right: 2.8rem;
+}
+
+.e-learning {
+  width: 63rem;
+}
+
+.e-learning p {
+  margin: 4rem 0;
+}
+
+.e-learning-btns {
+  height: 4.2rem;
+  width: 100%;
+}
+
+.e-learning-btns > button:first-child {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .training-options {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .taining-option:first-child {
+    margin: 0 0 4rem;
+  }
+
+  .e-learning {
+    width: 100%;
+  }
+
+  .e-learning-btns {
+    flex-direction: column;
+    height: 10.4rem;
+    width: 16rem;
+    margin: 0 auto;
+  }
+
+  .e-learning-btns > button:first-child {
+    margin: 0 0 2rem;
+  }
+}
+

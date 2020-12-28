@@ -69,7 +69,7 @@ function onAddressChange() {
   let address = `
   <h4 class="montserrat-14 semibold-text">${branch.name}</h4>
   <span class="montserrat-14">${branch.street} <br> ${branch.zip} <br> Switzerland</span>
-  <a class="montserrat-14 thin-text purple-text semibold-text" href="">${branch.number}</a>
+  <a class="montserrat-14 thin-text purple-text semibold-text" href="tel:${branch.number}">${branch.number}</a>
   `;
   [...contactLocationsDOM].forEach(el => el.classList.remove('active-location'))
   componyBranchDOM.innerHTML = address

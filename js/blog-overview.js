@@ -10,14 +10,14 @@ function buildSliderConfiguration() {
     }
   } else {
     return {
-      slideWidth: 1400
+      slideWidth: 1600
     }
   }
 }
 
 function configureSlider() {
   let config = buildSliderConfiguration()
-  
+
   if ($slider && $slider.reloadSlider) {
     // If the slider has already been initialized, reload it.
     $slider.reloadSlider(config)

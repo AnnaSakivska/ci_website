@@ -125,13 +125,6 @@
   padding-top: 2rem;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .service-opportunity-1-text h1,
-  .service-opportunity-2-text h1 {
-    font-size: 7.5rem;
-  }
-}
-
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .service-opportunity-2 {
     margin-bottom: 8rem;
@@ -186,7 +179,8 @@
 
 .chat-text-center {
   padding-bottom: 3rem;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
   width: 84rem;
   max-width: 100%;
   margin: 0 auto;
@@ -365,16 +359,6 @@
   justify-self: flex-start;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .model-text {
-    max-width: 36rem;
-  }
-
-  .model-text p {
-    line-height: 2.6rem;
-  }
-}
-
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .model-text {
     width: 34rem;
@@ -448,7 +432,7 @@
 
 .service-info-wrapper {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-between;
 }
 
@@ -458,9 +442,7 @@
   grid-row-gap: 1rem;
   flex-direction: column;
   justify-content: stretch;
-
   margin-right: 1rem;
-  /* max-width: 40rem; */
 }
 
 .service-info-img {
@@ -603,8 +585,7 @@
 
 .support {
   height: 64rem;
-  width: 100%;
-  max-width: 41rem;
+  width: 32%;
   background-color: #ffffff;
 }
 
@@ -650,24 +631,9 @@ div[class^='support-picture'] h2 {
 }
 
 .support-icon {
-  height: 18px;
-  width: 18px;
-}
-
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .support {
-    height: 59rem;
-    width: 100%;
-    max-width: 36rem;
-  }
-
-  div[class^='support-picture'] {
-    height: 45.2rem;
-  }
-
-  .support-icon {
-    margin-right: 4px;
-  }
+  margin-right: 4px;
+  height: 26px;
+  width: 26px;
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
@@ -785,7 +751,7 @@ div[class^='support-picture'] h2 {
   }
 
   .support-icon {
-    margin-right: 4px;
+    transform: translateY(-10%);
   }
 
   .more-supports-link {
@@ -812,8 +778,7 @@ div[class^='support-picture'] h2 {
 
 .review {
   height: 58.4rem;
-  /* max-width: 408px; */
-  width: 40.8rem;
+  width: 32%;
   background-color: var(--purple);
 }
 
@@ -851,8 +816,7 @@ div[class^='review-picture'] {
   top: 0;
   transform: translateY(-50%);
   height: 42px;
-  width: 175px;
-  padding: 10px;
+  padding: 1rem 2rem;
 }
 
 .white-review-theme {
@@ -871,18 +835,6 @@ div[class^='review-picture'] {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .review {
-    height: 51rem;
-    max-width: 36rem;
-    background-color: var(--purple);
-  }
-
-  div[class^='review-picture'] {
-    height: 360px;
-  }
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
@@ -904,7 +856,7 @@ div[class^='review-picture'] {
 
   .reviews-container {
     overflow: auto;
-    width: calc(100% + 40px);
+    width: calc(100% + 2rem);
   }
 
   .reviews-container::-webkit-scrollbar {
@@ -912,9 +864,22 @@ div[class^='review-picture'] {
   }
 
   .review {
+    position: relative;
     height: 100%;
     min-width: 208px;
     background-color: #4d7cff;
+  }
+
+  .review:last-child::after,
+  .insurance-types > li:last-child::after,
+  .contact-locations a:last-child::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -2rem;
+    display: block;
+    height: 50px;
+    width: 2rem;
   }
 
   .review:not(:last-child) {
@@ -944,7 +909,7 @@ div[class^='review-picture'] {
   .review-theme {
     left: 10px;
     height: 30px;
-    width: 129px;
+    width: 128px;
     padding: 6px 12px;
     font-size: 12px;
   }

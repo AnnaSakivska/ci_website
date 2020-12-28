@@ -83,6 +83,12 @@
   background-size: contain;
 }
 
+@media only screen and (min-width: 1400px) {
+  .offer-img {
+    background-size: cover;
+  }
+}
+
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .offers {
     margin-top: 4rem;
@@ -126,6 +132,7 @@
   }
 
   .individual-advice p span {
+    display: block;
     font-size: 14px;
     width: 16rem;
   }
@@ -179,34 +186,53 @@
 .team-btns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 60%;
+}
+
+.team-btn-active {
+  background-color: var(--purple);
+  color: #ffffff;
+}
+
+.team-btns > * {
+  margin-right: 3rem;
+}
+
+.team {
+  width: calc(100% + 10rem);
+  margin-bottom: 10rem;
+  white-space: nowrap;
+  overflow: scroll;
+  transition: all 0.2s;
+  user-select: none;
+  cursor: pointer;
 }
 
 .team-specialist {
+  position: relative;
   min-width: 46.9rem;
   height: 65.6rem;
   flex-direction: column;
   align-items: center;
 }
 
-.team {
-  width: calc(100% + 20rem);
-  margin-bottom: 10rem;
-  white-space: nowrap;
-  overflow: scroll;
-  transition: all 0.2s;
-  transform: scale(0.98);
-  will-change: transform;
-  user-select: none;
-  cursor: pointer;
+.team-specialist:last-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10rem;
+  display: block;
+  height: 50px;
+  width: 2rem;
+}
+
+.team-specialist > span {
+  text-decoration: underline;
 }
 
 .team.active-team {
   background: rgba(255, 255, 255, 0.3);
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(1);
 }
 
 .team::-webkit-scrollbar {
@@ -270,12 +296,6 @@
   color: var(--purple);
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1168px) {
-  .team-btns {
-    width: 70%;
-  }
-}
-
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .team-btns button {
     margin-bottom: 2rem;
@@ -330,7 +350,11 @@
   }
 
   .team {
-    width: 100%;
+    width: calc(100% + 2rem);
+  }
+
+  .team-specialist:last-child::after {
+    right: -2rem;
   }
 
   div[class^='team-specialist-'] {

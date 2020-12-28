@@ -20,11 +20,13 @@ function closeMenu() {
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    toTopBtn.style.display = "block"
-  } else {
-    toTopBtn.style.display = "none"
-  }
+  if (toTopBtn) toTopBtn.style.display = (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none"
+
+  // if (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  //   toTopBtn.style.display = "block"
+  // } else {
+  //   toTopBtn.style.display = "none"
+  // }
 }
 window.onscroll = function () { scrollFunction() }
 

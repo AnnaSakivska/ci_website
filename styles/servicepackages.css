@@ -9,8 +9,12 @@
 }
 
 .package {
+  min-width: 27rem;
   max-width: 31.6rem;
-  width: 100%;
+}
+
+.package:not(:last-child) {
+  margin-right: 1rem;
 }
 
 div[class$='package-img'] {
@@ -40,7 +44,7 @@ div[class$='package-img'] {
 
 .package-info {
   height: 84rem;
-  background-color: rgba(172, 219, 221, 0.2);
+  background-color: #f2f6ff;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
@@ -119,27 +123,6 @@ div[class$='package-img'] {
   margin: 2rem auto;
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .packages-wrapper {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-  }
-
-  .package {
-    max-width: 100%;
-  }
-
-  div[class$='package-img'] {
-    height: 38rem;
-  }
-
-  .package-info {
-    height: 70rem;
-  }
-}
-
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .packages-intro {
     margin-top: 6rem;
@@ -157,7 +140,7 @@ div[class$='package-img'] {
   }
 
   div[class$='package-img'] {
-    height: 32rem;
+    height: 40rem;
   }
 
   .package-info {
@@ -181,6 +164,10 @@ div[class$='package-img'] {
 
   .package {
     max-width: 60rem;
+  }
+
+  .package:not(:last-child) {
+    margin-right: 0;
   }
 
   .package-info {

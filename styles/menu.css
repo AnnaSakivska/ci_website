@@ -136,15 +136,15 @@
   list-style-type: none;
 }
 
-.services__menu > * {
+.services__menu a {
   height: 7.4rem;
   width: 19rem;
   margin-top: 4rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.services__menu > * > img {
+.services__menu img {
   height: 43px;
   width: 43px;
 }
@@ -155,14 +155,14 @@
     font-size: 16px;
   }
 
-  .services__menu > * {
+  .services__menu a {
     height: 5rem;
     width: 10rem;
     margin-top: 2rem;
     font-size: 10px;
   }
 
-  .services__menu > * > img {
+  .services__menu  img {
     height: 24px;
     width: 24px;
   }
