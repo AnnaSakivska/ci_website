@@ -510,13 +510,18 @@
   }
 
   .service-info-btns,
-  .model-text-btns {
+  .model-text-btns,
+  .whorkshop-btns {
     position: absolute;
     left: 50%;
     bottom: 4rem;
     transform: translateX(-50%);
     justify-content: space-between;
     width: 5rem;
+  }
+
+  .whorkshop-btns {
+    bottom: 3rem;
   }
 
   .service-info-btn,
@@ -536,7 +541,8 @@
   }
 
   .active-info-btn:after,
-  .active-model-btn:after {
+  .active-model-btn:after,
+  .active-workshop-btn:after {
     position: absolute;
     content: '';
     height: 10px;
