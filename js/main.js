@@ -19,35 +19,220 @@ function closeMenu() {
   menuIcon.classList.remove('active-menu')
 }
 
+// Scroll to Top button 
 function scrollFunction() {
   if (toTopBtn) toTopBtn.style.display = (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none"
-
-  // if (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-  //   toTopBtn.style.display = "block"
-  // } else {
-  //   toTopBtn.style.display = "none"
-  // }
 }
 window.onscroll = function () { scrollFunction() }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0 // For Safari
   document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
 
 // Slider
+let xDown = null
+let yDown = null
+
 function showSlides(slidesClass, sliderItemsClass, slideIndex, activeItem, activeBtn) {
   const slides = document.getElementsByClassName(slidesClass)
   const sliderItems = document.getElementsByClassName(sliderItemsClass)
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove(activeItem)
+  for (let i = 0; i < slides.length; i++) slides[i].classList.remove(activeItem)
+
+  for (let i = 0; i < sliderItems.length; i++) sliderItems[i].className = sliderItems[i].className.replace(` ${activeBtn}`, '')
+
+  slideIndex = (slideIndex - 1 < slides.length) ? slideIndex - 1 : slides.length - 1
+  slides[slideIndex].classList.add(activeItem)
+  sliderItems[slideIndex].className += ` ${activeBtn}`
+}
+
+
+function addTouchListener(container, showSlidesArgs) {
+  container.addEventListener('touchstart', handleTouchStart, false)
+  container.addEventListener('touchmove', handleTouchMove, false)
+
+  function getTouches(evt) {
+    return evt.touches ||        // browser API
+      evt.originalEvent.touches // jQuery
   }
 
-  for (let i = 0; i < sliderItems.length; i++) {
-    sliderItems[i].className = sliderItems[i].className.replace(` ${activeBtn}`, '')
+  function handleTouchStart(evt) {
+    const firstTouch = getTouches(event)[0]
+    xDown = firstTouch.clientX
+    yDown = firstTouch.clientY
   }
-  slides[slideIndex - 1].classList.add(activeItem)
-  sliderItems[slideIndex - 1].className += ` ${activeBtn}`
+
+  function handleTouchMove(evt) {
+    const arg = showSlidesArgs
+    const elementsNumber = document.querySelectorAll(`.${arg.slidesClass}`).length
+    const xUp = evt.touches[0].clientX
+    const yUp = evt.touches[0].clientY
+    const xDiff = xDown - xUp
+    const yDiff = yDown - yUp
+
+    if (!xDown || !yDown) {
+      return
+    }
+
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      arg.slideIndex = xDiff > 0 ? arg.slideIndex < elementsNumber
+        ? arg.slideIndex + 1 : elementsNumber
+        : arg.slideIndex = arg.slideIndex > 1 ? arg.slideIndex - 1 : 1
+      showSlides(arg.slidesClass, arg.sliderItemsClass, arg.slideIndex, arg.activeItem, arg.activeBtn)
+    }
+    xDown = null
+    yDown = null
+  }
+}
+
+// for home page
+const slideWrapper = document.querySelector('.slide')
+if (slideWrapper) {
+  addTouchListener(slideWrapper, {
+    slidesClass: 'slide-photos',
+    sliderItemsClass: 'slider-item',
+    slideIndex: 1,
+    activeItem: 'slide-photos-active',
+    activeBtn: 'active-slider'
+  })
+}
+
+const benefitsWrapper = document.querySelector('.benefits')
+if (benefitsWrapper) {
+  addTouchListener(benefitsWrapper, {
+    slidesClass: 'benefits-option',
+    sliderItemsClass: 'benefits-slider-item',
+    slideIndex: 1,
+    activeItem: 'active-benefits-option',
+    activeBtn: 'active-benefits-slider'
+  })
+}
+
+// about-combinvest
+const combinvestWrapper = document.querySelector('.combinvest-info-wrapper')
+if (combinvestWrapper) {
+  addTouchListener(combinvestWrapper, {
+    slidesClass: 'combinvest-info',
+    sliderItemsClass: 'combinvest-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+// for taxes page
+const taxesWrapper = document.querySelector('.taxes-wrapper')
+if (taxesWrapper) {
+  addTouchListener(taxesWrapper, {
+    slidesClass: 'taxes-type',
+    sliderItemsClass: 'taxes-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+// for service-insurance page
+const insuranceWrapper = document.querySelector('.insurance-info-wrapper')
+if (insuranceWrapper) {
+  addTouchListener(insuranceWrapper, {
+    slidesClass: 'insurance-info',
+    sliderItemsClass: 'insurance-info-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+const protectionWrapper = document.querySelector('.protection-info-wrapper')
+if (protectionWrapper) {
+  addTouchListener(protectionWrapper, {
+    slidesClass: 'protection-info',
+    sliderItemsClass: 'protection-info-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+const carIncurWrapper = document.querySelector('.car-incurance-wrapper')
+if (carIncurWrapper) {
+  addTouchListener(carIncurWrapper, {
+    slidesClass: 'car-insurance',
+    sliderItemsClass: 'car-insurance-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+const travelInsurWrapper = document.querySelector('.travel-insurance-wrapper')
+if (travelInsurWrapper) {
+  addTouchListener(travelInsurWrapper, {
+    slidesClass: 'travel-insurance',
+    sliderItemsClass: 'travel-insurance-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+// for service-save-money page
+const assetWrapper = document.querySelector('.asset-types-wrapper')
+if (assetWrapper) {
+  addTouchListener(assetWrapper, {
+    slidesClass: 'asset-types-text',
+    sliderItemsClass: 'asset-btn',
+    slideIndex: 1,
+    activeItem: 'active-model-text',
+    activeBtn: 'active-model-btn'
+  })
+}
+
+//for service-real-estate page
+const mortgageWrapper = document.querySelector('.mortgage-wrapper')
+if (mortgageWrapper) {
+  addTouchListener(mortgageWrapper, {
+    slidesClass: 'mortgage-text',
+    sliderItemsClass: 'model-text-btn',
+    slideIndex: 1,
+    activeItem: 'active-mortgage-text',
+    activeBtn: 'active-model-btn'
+  })
+}
+
+// for service-healthcare page
+const healthcareWrapper = document.querySelector('.healthcare-wrapper')
+if (healthcareWrapper) {
+  addTouchListener(healthcareWrapper, {
+    slidesClass: 'healthcare-info',
+    sliderItemsClass: 'healthcare-info-btn',
+    slideIndex: 1,
+    activeItem: 'active-service-info',
+    activeBtn: 'active-info-btn'
+  })
+}
+
+const healthModelWrapper = document.querySelector('.healthcare-model-wrapper')
+if (healthModelWrapper) {
+  addTouchListener(healthModelWrapper, {
+    slidesClass: 'healthcare-model-text',
+    sliderItemsClass: 'healthcare-btn',
+    slideIndex: 1,
+    activeItem: 'active-model-text',
+    activeBtn: 'active-model-btn'
+  })
+}
+
+// for academy page
+const workShopsContainer = document.querySelector('.workshops')
+if (workShopsContainer) {
+  addTouchListener(workShopsContainer, {
+    slidesClass: 'workshop',
+    sliderItemsClass: 'workshop-btn',
+    slideIndex: 1,
+    activeItem: 'active-workshop',
+    activeBtn: 'active-workshop-btn'
+  })
 }
