@@ -20,6 +20,7 @@
 
 @media only screen and (max-width: 767px) {
   .taxes-wrapper {
+    display: block;
     height: 60rem;
     max-width: 40rem;
   }
@@ -31,6 +32,7 @@
   .taxes-wrapper > * {
     max-width: 40rem;
     margin: 0 auto;
+    height: 60rem;
   }
 
   .taxes-btns {

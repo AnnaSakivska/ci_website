@@ -525,6 +525,10 @@
     bottom: 3rem;
   }
 
+  .taxes-btns {
+    bottom: 5rem;
+  }
+
   .service-info-btn,
   .model-text-btn {
     width: 2px;
