@@ -25,9 +25,17 @@
   border-radius: 21px;
 }
 
+.academy-btn:hover {
+  border: var(--blackblue);
+}
+
 .cockpit-btn {
   width: 196px;
   padding: 0 28px;
+}
+
+.cockpit-btn:hover {
+  border: var(--blackblue);
 }
 
 .white-border-btn {

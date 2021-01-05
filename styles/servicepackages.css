@@ -73,14 +73,15 @@ div[class$='package-img'] {
 .tooltiptext {
   visibility: hidden;
   width: 38rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #ffffff;
   border-radius: 8px;
   padding: 14px;
   position: absolute;
-  top: -16rem;
+  top: -20rem;
   left: -1rem;
   z-index: 1;
+  line-height: 20px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -94,7 +95,7 @@ div[class$='package-img'] {
   position: absolute;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid rgba(0, 0, 0, 0.7);
+  border-top: 10px solid rgba(0, 0, 0, 0.9);
   border-bottom: 10px solid transparent;
   left: 3.2rem;
   bottom: -20px;

@@ -42,6 +42,11 @@
   max-width: 44%;
 }
 
+.asset-text {
+  text-align: justify;
+  text-align-last: center;
+}
+
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
   .asset-types-wrapper {
     width: 100%;
@@ -62,5 +67,10 @@
 
   .asset-btns {
     width: 3rem;
+  }
+
+  .asset-text {
+    text-align: center;
+    line-height: 26px;
   }
 }

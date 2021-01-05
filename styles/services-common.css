@@ -30,7 +30,7 @@
 }
 
 .private-vorsorge > p {
-  padding-top: 2rem;
+  padding-top: 4rem;
   line-height: 2.8rem;
 }
 
@@ -166,7 +166,6 @@
   position: relative;
   padding: 10rem 0;
   width: 100%;
-  /* max-width: 1600px; */
   margin: 0 auto;
   background: linear-gradient(270deg, rgba(77, 124, 255, 0) 0%, rgba(77, 124, 255, 0.8) 50%, #4d7cff 100%),
     url('../assets/img/combinvest_news.png') repeat;
@@ -177,10 +176,13 @@
   margin-bottom: 3rem;
 }
 
+.chat-text > * {
+  max-width: 50%;
+}
+
 .chat-text-center {
   padding-bottom: 3rem;
-  text-align: justify;
-  text-align-last: center;
+  text-align: center;
   width: 84rem;
   max-width: 100%;
   margin: 0 auto;
@@ -283,7 +285,7 @@
     display: none;
   }
 
-  .chat-text {
+  .chat-text > * {
     max-width: 100%;
   }
 }
@@ -307,6 +309,7 @@
 
   .chat-text > * {
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 
   .chat-text-center h2 {
@@ -446,8 +449,8 @@
 }
 
 .service-info-img {
-  height: 6.8rem;
-  width: 6rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
@@ -634,6 +637,7 @@ div[class^='support-picture'] h2 {
 
 .support-text p {
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .support-icon {
@@ -724,7 +728,7 @@ div[class^='support-picture'] h2 {
   }
 
   .support {
-    height: 47.8rem;
+    height: 50.8rem;
     width: 100%;
     max-width: 40rem;
     background-color: #ffffff;
@@ -836,7 +840,7 @@ div[class^='review-picture'] {
 }
 
 .more-reviews-link {
-  margin-top: 10px;
+  margin-top: 16px;
   height: 24px;
   display: flex;
   justify-content: flex-end;
@@ -921,6 +925,7 @@ div[class^='review-picture'] {
   }
 
   .more-reviews-link {
+    margin-top: 0;
     order: 7;
   }
 }

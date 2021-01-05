@@ -11,6 +11,8 @@ function openMenu() {
   menuIcon.classList.add('active-menu')
 }
 
+
+
 function closeMenu() {
   if (menuArrowUp) menuArrowUp.style.display = 'block'
   document.documentElement.style.overflowY = 'auto'

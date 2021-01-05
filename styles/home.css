@@ -383,7 +383,7 @@ span[class^='benefits-options'] {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: 10px 0;
+  padding: 18px 0;
   text-align: end;
 }
 
@@ -625,10 +625,10 @@ span[class^='benefits-options'] {
 
 .clipped-text {
   position: absolute;
-  width: 624px;
+  max-width: 62.4rem;
   top: 38%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  left: 43.4rem;
+  transform: translateY(-50%);
 }
 
 .clipped-text h4 {
@@ -646,8 +646,9 @@ span[class^='benefits-options'] {
   }
 
   .clipped-text {
-    width: 60%;
-    left: 70%;
+    max-width: 60%;
+    left: 30rem;
+    /* left: 70%; */
   }
 
   .clipped-text p {
@@ -937,7 +938,7 @@ span[class^='benefits-options'] {
 .contacts-text {
   width: 100%;
   max-width: 80rem;
-  padding: 11rem 12rem 0 3rem;
+  padding: 11rem 12rem 0 8rem;
 }
 
 .contacts-wrapper h1 {
