@@ -1,20 +1,8 @@
 /* Taxes details */
 .taxes-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.taxes-wrapper > * {
-  margin-right: 4rem;
-  max-width: 38rem;
-}
-
-@media only screen and (max-width: 1440px) and (min-width: 1169px) {
-  .taxes-wrapper > * {
-    margin-right: 2rem;
-    max-width: 33rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 768px) {

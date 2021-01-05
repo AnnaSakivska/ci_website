@@ -14,7 +14,9 @@
 /* Combinvest details */
 .combinvest-info-wrapper {
   margin: 10rem 0;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
 }
 
 .combinvest-info-wrapper > * {
