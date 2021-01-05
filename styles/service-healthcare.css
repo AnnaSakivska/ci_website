@@ -61,7 +61,7 @@
   }
 
   .healthcare-model-wrapper > .healthcare-model-text {
-    max-width: 100%;
+    max-width: 40rem;
     height: 51.6rem;
   }
 }
