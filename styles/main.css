@@ -176,12 +176,17 @@ html {
   color: var(--purple);
 }
 
+.de-option-white {
+  color: #ffffff;
+}
+
 .arrow-down-link {
   width: 28px;
   height: 28px;
 }
 
-.menu-arrow-down {
+.menu-arrow-down,
+.menu-arrow-white {
   margin: 0 0 8px 6px;
   border: solid var(--purple);
   border-width: 0 4px 4px 0;
@@ -189,6 +194,11 @@ html {
   padding: 7px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.menu-arrow-white {
+  border: solid #ffffff;
+  border-width: 0 4px 4px 0;
 }
 
 .menu-icon {
@@ -243,6 +253,10 @@ html {
 /* Other */
 .cup {
   cursor: pointer;
+}
+
+.link-darkblue:hover {
+  color: var(--darkblue);
 }
 
 .padding-top-11 {
@@ -319,6 +333,14 @@ textarea:focus {
   background-color: #ffffff;
 }
 
+.darkblue-hover:hover .arrow-darkblue {
+  background-color: var(--darkblue);
+}
+
+.darkblue-hover:hover .darkblue-hover-text {
+  color: var(--darkblue);
+}
+
 .purple-arrow {
   background-color: var(--purple);
 }
@@ -343,6 +365,11 @@ textarea:focus {
 .purple-arrow::after {
   border-right: 2px solid var(--purple);
   border-top: 2px solid var(--purple);
+}
+
+.darkblue-hover:hover .arrow-darkblue::after {
+  border-right: 2px solid var(--darkblue);
+  border-top: 2px solid var(--darkblue);
 }
 
 @media only screen and (max-width: 767px) {

@@ -150,6 +150,7 @@
 /* Insurances types section  */
 .insurances-types {
   background: rgba(144, 229, 233, 0.1);
+  padding-bottom: 13.6rem;
 }
 
 .private-law-img,
@@ -191,6 +192,7 @@
   .insurances-types {
     margin-top: 2rem;
     background: transparent;
+    padding-bottom: 0;
   }
 
   .private-law-img,
@@ -331,6 +333,7 @@
   .travel-insurance {
     height: 51rem;
     max-width: 40.7rem;
+    margin-right: 0;
   }
 
   .travel-insurance {

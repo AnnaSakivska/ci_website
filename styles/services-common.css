@@ -70,7 +70,7 @@
   .private-vorsorge {
     padding-bottom: 4rem;
     max-width: 100%;
-    /* text-align: initial; */
+    text-align: initial;
   }
 
   .private-vorsorge h2,
@@ -434,7 +434,6 @@
 
 .service-info-wrapper {
   display: flex;
-  /* width: 100%; */
   justify-content: space-between;
 }
 
@@ -502,7 +501,7 @@
   }
 
   .active-service-info p {
-    padding: 0 3rem 3rem;
+    padding: 0 2rem 3rem;
     font-size: 14px;
     text-align: center;
   }
@@ -595,6 +594,7 @@
   height: 64rem;
   width: 32%;
   background-color: #ffffff;
+  perspective: 600px;
 }
 
 .support-text {
@@ -604,23 +604,74 @@
   padding: 22px 16px 0;
 }
 
-div[class^='support-picture'] {
-  position: relative;
+.virtual-support-flip {
   height: 50.2rem;
   width: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.virtual-support-flip.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.support-card {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+div[class^='support-picture'] {
   background: linear-gradient(to top, rgba(77, 124, 255, 0) 0%, rgba(77, 124, 255, 0.8) 50%, #4d7cff 100%),
     url('../assets/img/combinvest_news.png') repeat;
   background-size: 200%;
 }
 
-div[class^='support-picture'] h2 {
+.back-support-picture {
+  background: var(--darkblue);
+  transform: rotateY(180deg);
+}
+
+.virtual-support-flip h2 {
   position: absolute;
   left: 50%;
   top: 4rem;
   transform: translate(-50%);
 }
 
-.support-name {
+.supporter-email {
+  position: absolute;
+  text-align: center;
+  bottom: 19rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.supporter-email a {
+  display: inline-block;
+  text-decoration: underline;
+  margin-top: 1rem;
+}
+
+.supporter-medias {
+  position: absolute;
+  bottom: 12rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.supporter-media {
+  background-color: var(--darkblue);
+}
+
+.support-name,
+.close-supporter-btn {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -632,6 +683,22 @@ div[class^='support-picture'] h2 {
   width: 218px;
   border-radius: 21px;
   background-color: #ffffff;
+}
+
+.close-supporter-btn {
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+
+.supporter-media svg {
+  height: 42px;
+  width: 42px;
+}
+
+.close-supporter-btn img {
+  height: 26.6px;
+  width: 26.6px;
 }
 
 .support-text p {
@@ -667,12 +734,12 @@ div[class^='support-picture'] h2 {
     background-color: #ffffff;
   }
 
-  div[class^='support-picture'] {
+  .virtual-support-flip {
     height: 42.2rem;
     max-width: 100%;
   }
 
-  div[class^='support-picture'] h2 {
+  .virtual-support-flip h2 {
     font-size: 26px;
   }
 
@@ -733,14 +800,27 @@ div[class^='support-picture'] h2 {
     background-color: #ffffff;
   }
 
-  div[class^='support-picture'] {
+  .virtual-support-flip {
     height: 34.8rem;
     max-width: 100%;
   }
 
-  div[class^='support-picture'] h2 {
+  .virtual-support-flip h2 {
     font-size: 20px;
   }
+
+  .supporter-email {
+    bottom: 17rem;
+  }
+
+  .supporter-email a {
+    text-decoration: initial;
+  }
+  
+  .supporter-medias {
+    bottom: 10rem;
+  }
+
 
   .support-text {
     padding: 2rem 1rem;

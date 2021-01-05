@@ -13,14 +13,14 @@
         <use id="invest" fill="#2E4A8C" xlink:href="#path-3"></use>
         <g id="Group" mask="url(#mask-4)">
             <g transform="translate(2.000000, 19.000000)" id="4.-color-/-darkblue">
-                <rect id="Rectangle" fill="#ffffff" x="0" y="0" width="100" height="24"></rect>
+                <rect id="Rectangle" fill="#4D7CFF" x="0" y="0" width="100" height="24"></rect>
             </g>
         </g>
         <mask id="mask-6" fill="white">
             <use xlink:href="#path-5"></use>
         </mask>
-        <use id="comb" fill="#000000" xlink:href="#path-5"></use>
-        <g id="Group" mask="url(#mask-6)" fill="#000000">
+        <use id="comb" fill="#ffffff" xlink:href="#path-5"></use>
+        <g id="Group" mask="url(#mask-6)" fill="#ffffff">
             <g id="4.-color-/-black">
                 <rect id="Rectangle" x="0" y="0" width="85" height="24"></rect>
             </g>

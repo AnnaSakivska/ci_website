@@ -11,8 +11,6 @@ function openMenu() {
   menuIcon.classList.add('active-menu')
 }
 
-
-
 function closeMenu() {
   if (menuArrowUp) menuArrowUp.style.display = 'block'
   document.documentElement.style.overflowY = 'auto'
@@ -31,6 +29,17 @@ function topFunction() {
   document.body.scrollTop = 0 // For Safari
   document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
 }
+
+// Visual support 
+const card = document.querySelectorAll('.virtual-support-flip')
+const cardBtn = document.querySelectorAll('.virtural-card-btn')
+
+function flipCard() {
+  if (event.target.classList.contains('support-name')) event.target.parentNode.parentNode.classList.toggle('is-flipped')
+  if (event.target.classList.contains('close-supporter-img')) event.target.parentNode.parentNode.parentNode.classList.toggle('is-flipped')
+}
+if (card) [...cardBtn].forEach(el => el.addEventListener('click', flipCard))
+
 
 // Slider
 let xDown = null
