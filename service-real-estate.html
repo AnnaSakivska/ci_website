@@ -61,10 +61,10 @@
           <p class="montserrat-18 line-height-28 thin-text">
             Wir nehmen uns gerne die Zeit und finden für Sie die passende Vorsorgelösung, mit der Sie nicht nur Vermögen aufbauen sondern gleichzeitig auch noch Steuern sparen.
           </p>
-          <a class="get-consultancy flex-wrapper darkblue-hover" href="">
+          <div class="get-consultancy flex-wrapper darkblue-hover" onclick="openConsultancyForm()">
             <span class="arrow-right white-for-arrow arrow-darkblue"></span>
             <span class="montserrat-16 bold-text darkblue-hover-text get-consultancy-text">Beratungstermin vereinbaren</span>
-          </a>
+          </div>
         </div>
       </div>
       <div class="b-screens-only t-display-none chat-img-wrapper">
@@ -81,6 +81,30 @@
         </div>
       </div>
     </div>
+    
+    <!-- Get the Consultancy Pop-up -->
+    <div class="popup-container">
+      <div class="popup-window">
+        <span class="cup close consultancy-close" onclick="closeConsultancyForm()"></span>
+        <h2 class="montserrat-24 white-text uppercase">Wir helfen dir gerne weiter</h2>
+        <form class="flex-wrapper consultancy-form" action="">
+          <div class="form-names">
+            <label class="montserrat-12 bold-text white-text uppercase" for="first-name">Nachname*</label>
+            <input class="montserrat-18" type="text" id="first-name" placeholder="Nachname" required minlength="2">
+            <label class="montserrat-12 bold-text white-text uppercase" for="last-name">vorname* </label>
+            <input class="montserrat-18" type="text" id="last-name" placeholder="Vorname" required minlength="2">
+          </div>
+          <label class="montserrat-12 bold-text white-text uppercase" for="email">E-mail*</label>
+          <input class="montserrat-18" type="email" id="email" name="email" placeholder="example@email.com" required>
+          <label class="montserrat-12 bold-text white-text uppercase" for="tel">Telefonnummer*</label>
+          <input class="montserrat-18" type="tel" size="12" id="tel" placeholder="+41 xx xxx xx xx" required pattern="[-+]?[0-9]"> 
+          <label class="montserrat-12 bold-text white-text uppercase" for="textarea">Deine Anfrage*</label>
+          <textarea class="montserrat-18" name="request" id="textarea" placeholder="Hier Nachricht eingeben" required></textarea>
+          <button type="submit" class="btn primary-light-btn btn-consultancy-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
     <!-- Savings and financing section -->
     <div class="container s-container">
       <div class="container-2">
@@ -154,6 +178,7 @@
         </div>
       </div>
     </div>
+    
     <!-- Virtual support -->
     <div class="container s-container-2">
       <div class="container-2 virtual-support">
