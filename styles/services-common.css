@@ -1151,11 +1151,21 @@ div[class^='review-picture'] {
 }
 
 @media only screen and (max-width: 767px) {
+  .cookies-container {
+    overflow: scroll;
+  }
+
   .popup-window {
     overflow: scroll;
-    min-height: max-content;
     height: 100vh;
     max-width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .cookies-popup {
+    min-height: 55rem;
   }
 
   .cookies-popup img {

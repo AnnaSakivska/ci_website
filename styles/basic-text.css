@@ -1,0 +1,63 @@
+.basic-title-text,
+.basic-text-wrapper {
+  max-width: 84.2rem;
+  margin: 0 auto;
+}
+
+.basic-text-wrapper {
+  padding-bottom: 5rem;
+}
+
+.basic-text-part {
+  margin-bottom: 6rem;
+}
+
+.basic-text-part h3 {
+  margin-bottom: 2rem;
+}
+
+.basic-text-part h2 {
+  padding: 2rem 0 4rem;
+}
+
+.basic-text-part > p {
+  margin-bottom: 3rem;
+}
+
+.basic-text-link {
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+.basic-list > * {
+  position: relative;
+  border: 1px solid var(--purple);
+  border-width: 0 0 1px 0;
+  padding: 0 0 4px 22px;
+}
+
+.basic-list > p::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--purple);
+}
+
+.basic-download {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+}
+
+.basic-download > p::after {
+  position: absolute;
+  bottom: 6px;
+  right: 0;
+  content: url('../assets/img/download.svg');
+  width: 2rem;
+  height: 2rem;
+}
