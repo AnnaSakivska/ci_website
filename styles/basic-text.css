@@ -31,14 +31,14 @@
 
 .basic-list > * {
   position: relative;
-  border: 1px solid var(--purple);
+  border: 1px solid var(--lilac);
   border-width: 0 0 1px 0;
   padding: 0 0 4px 22px;
 }
 
 .basic-list > p::before {
   position: absolute;
-  top: 8px;
+  top: 10px;
   left: 0;
   content: '';
   width: 1rem;
@@ -60,4 +60,45 @@
   content: url('../assets/img/download.svg');
   width: 2rem;
   height: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .basic-text-wrapper {
+    padding-bottom: 2rem;
+  }
+
+  .basic-text-part {
+    margin-bottom: 5rem;
+  }
+
+  .list-example {
+    margin-top: -2rem;
+  }
+
+  .basic-text-part h2 {
+    font-size: 18px;
+    padding: 0 0 2.4rem;
+  }
+  
+  .basic-text-part h3 {
+    margin-bottom: 2rem;
+    font-size: 14px;
+  }
+
+  .basic-text-part > p,
+  .basic-list > * {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .basic-list > p::before {
+    top: 8px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .basic-download {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+  }
 }

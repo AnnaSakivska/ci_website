@@ -2,6 +2,11 @@
   margin-top: 4rem;
 }
 
+.packages-intro p {
+  max-width: 84.2rem;
+  margin: 0 auto;
+}
+
 .packages-wrapper {
   display: flex;
   justify-content: space-between;
@@ -153,6 +158,10 @@ div[class$='package-img'] {
   .packages-intro {
     margin-top: 0;
     text-align: initial;
+  }
+
+  .packages-intro p {
+    width: 100%;
   }
 
   .packages-wrapper {
