@@ -43,7 +43,7 @@ if (card) [...cardBtn].forEach(el => el.addEventListener('click', flipCard))
 // Open the Consultancy Pop-up
 const consultancyDOM = document.querySelector('.popup-container')
 
-function openConsultancyForm() {
+function openPopUpWindow() {
   document.body.style.top = `-${window.scrollY}px`
   document.documentElement.style.overflowY = 'hidden'
   document.querySelector('.sticky').style.zIndex = '1'
@@ -51,7 +51,7 @@ function openConsultancyForm() {
   consultancyDOM.classList.add('popup-container-active')
 }
 
-function closeConsultancyForm() { 
+function closePopUpWindow() { 
   document.documentElement.style.overflowY = 'auto'
   document.querySelector('.sticky').style.zIndex = '10000'
   toTopBtn.style.display = 'block'

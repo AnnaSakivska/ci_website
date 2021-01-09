@@ -26,3 +26,28 @@ $(document).ready(
       }]
     })
   })
+
+// Slider for mobile Blog-detail page
+let slickSliderActive = false
+function checkSlider() {
+  if ($(window).width() < 768) {
+    if (slickSliderActive == false) {
+      $('.center').slick({
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        variableWidth: true
+      })
+      slickSliderActive = true
+    }
+  }
+  else {
+    if (slickSliderActive == true) {
+      $('.center').slick('unslick')
+      slickSliderActive = false
+    }
+  }
+};
+
+checkSlider()
+$(window).on('resize', checkSlider)
