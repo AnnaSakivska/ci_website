@@ -14,9 +14,6 @@
 /* Combinvest details */
 .combinvest-info-wrapper {
   margin: 10rem 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 2rem;
 }
 
 .combinvest-info-wrapper > * {
@@ -183,16 +180,20 @@
 
 .team-departments .arrow-right {
   width: 10.4rem;
+  transform: translateY(-200%);
 }
 
 .team-departments .arrow-right::after {
   width: 10px;
   height: 10px;
+  transform: translateY(-4px) rotate(45deg);
 }
 
 .team-btns {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-gap: 3rem;
+    margin-right: 3rem;
 }
 
 .team-btn-active {
@@ -200,27 +201,19 @@
   color: #ffffff;
 }
 
-.team-btns > * {
-  margin-right: 3rem;
-}
-
 .arrows-scroll {
   user-select: none;
-  /* display: flex; */
-  /* align-items: center; */
-}
-
-.arrows-position {
+  height: 8rem;
+  user-select: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
 }
 
 .arrow-scroll-left {
   display: none;
-  margin-right: 2rem;
+  margin-left: -2rem;
   transform: rotateY(-180deg);
 }
 
@@ -324,8 +317,8 @@
 }
 
 @media only screen and (max-width: 1168px) and (min-width: 768px) {
-  .team-btns button {
-    margin-bottom: 2rem;
+  .team-btns {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .team-departments {

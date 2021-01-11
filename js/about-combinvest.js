@@ -39,12 +39,10 @@ arrowScrollLeftDOM.addEventListener('click', () => {
 function showArrowLeft() {
   if (teamContainerDOM.scrollLeft >= specialistContainerDOM.offsetWidth) {
     arrowScrollLeftDOM.style.display = 'inline-block'
-    if(arrowScrollLeftDOM.style.display == 'inline-block' && window.innerWidth < 1260 && window.innerWidth > 1168) {
-      arrowsContainerDOM.classList.add('arrows-position')
-    }
+    arrowsContainerDOM.style.flexDirection = 'column'
   } else {
     arrowScrollLeftDOM.style.display = 'none'
-    arrowsContainerDOM.classList.remove('arrows-position')
+    arrowsContainerDOM.style.flexDirection = 'row'
   }
 }
 

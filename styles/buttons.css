@@ -57,7 +57,7 @@
 
 .primary-light-btn:disabled {
   cursor: default;
-  background-color: var(--lilac);
+  background-color: rgb(184, 203, 255, 0.8);
 }
 
 .primary-dark-btn {

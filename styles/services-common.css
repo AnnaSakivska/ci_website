@@ -624,8 +624,8 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: visible;
-  backface-visibility: hidden;
+  /* -webkit-backface-visibility: visible;
+  backface-visibility: hidden; */
 }
 
 div[class^='support-picture'] {
@@ -1027,6 +1027,10 @@ div[class^='review-picture'] {
 .popup-container-active {
   display: block;
   z-index: 2;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 .popup-window {

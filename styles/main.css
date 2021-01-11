@@ -323,7 +323,8 @@ textarea:focus {
 }
 
 /* Arrows */
-.arrow-right {
+.arrow-right,
+.arrow-left {
   position: relative;
   display: inline-block;
   width: 52px;
@@ -356,6 +357,18 @@ textarea:focus {
   right: 0;
   top: 0;
   border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.arrow-left::before {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  left: 0;
+  top: 0;
+  border-left: 2px solid #000000;
   border-top: 2px solid #000000;
   transform: translateY(-2px) rotate(45deg);
 }
