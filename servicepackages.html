@@ -49,7 +49,7 @@
           </div>
           <div class="package-btn">
             <h4 class="montserrat-18 line-height-28">Jetzt für nur <br class="b-screens-only"> <span class="bold-text">CHF 39.90 pro Monat <br class="b-screens-only"> (CHF 467.– / Jahr)</span> </h4>
-            <button class="btn primary-light-btn">Open Contact Form</button>
+            <button class="btn primary-light-btn" onclick="openPopUpWindow()">Open Contact Form</button>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
           </div>
           <div class="package-btn">
             <h4 class="montserrat-18 line-height-28">Jetzt für nur <br class="b-screens-only"> <span class="bold-text">CHF 39.90 pro Monat <br class="b-screens-only"> (CHF 467.– / Jahr)</span></h4>
-            <button class="btn primary-light-btn">Open Contact Form</button>
+            <button class="btn primary-light-btn" onclick="openPopUpWindow()">Open Contact Form</button>
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@
           </div>
           <div class="package-btn">
             <h4 class="montserrat-18 line-height-28">Jetzt für nur <br class="b-screens-only"> <span class="bold-text">CHF 39.90 pro Monat <br class="b-screens-only"> (CHF 467.– / Jahr)</span></h4>
-            <button class="btn primary-light-btn">Open Contact Form</button>
+            <button class="btn primary-light-btn" onclick="openPopUpWindow()">Open Contact Form</button>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@
           </div>
           <div class="package-btn">
             <h4 class="montserrat-18 line-height-28">Jetzt <br class="b-screens-only"> <span class="bold-text">kostenlos <br class="b-screens-only"> testen!</span> </h4>
-            <button class="montserrat-16 btn primary-light-btn">Open Contact Form</button>
+            <button class="montserrat-16 btn primary-light-btn" onclick="openPopUpWindow()">Open Contact Form</button>
           </div>
         </div>
       </div>
@@ -335,6 +335,30 @@
       </ul>
     </div>
   </div>
+
+      <!-- Get the Consultancy Pop-up -->
+      <div class="popup-container">
+        <div class="popup-window">
+          <span class="cup close consultancy-close" onclick="closePopUpWindow()"></span>
+          <h2 class="montserrat-24 white-text uppercase">Wir helfen dir gerne weiter</h2>
+          <form class="flex-wrapper consultancy-form" action="">
+            <div class="form-names">
+              <label class="montserrat-12 bold-text white-text uppercase" for="first-name">Nachname*</label>
+              <input class="montserrat-18" type="text" id="first-name" placeholder="Nachname" required minlength="2">
+              <label class="montserrat-12 bold-text white-text uppercase" for="last-name">vorname* </label>
+              <input class="montserrat-18" type="text" id="last-name" placeholder="Vorname" required minlength="2">
+            </div>
+            <label class="montserrat-12 bold-text white-text uppercase" for="email">E-mail*</label>
+            <input class="montserrat-18" type="email" id="email" name="email" placeholder="example@email.com" required>
+            <label class="montserrat-12 bold-text white-text uppercase" for="tel">Telefonnummer*</label>
+            <input class="montserrat-18" type="tel" size="12" id="tel" placeholder="+41 xx xxx xx xx" required pattern="[-+]?[0-9]"> 
+            <label class="montserrat-12 bold-text white-text uppercase" for="textarea">Deine Anfrage*</label>
+            <textarea class="montserrat-18" name="request" id="textarea" placeholder="Hier Nachricht eingeben" required></textarea>
+            <button type="submit" class="btn primary-light-btn btn-consultancy-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  
   <script type="text/javascript" src="./js/servicespachages.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>

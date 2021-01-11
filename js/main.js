@@ -20,7 +20,7 @@ function openMenu() {
 function closeMenu() {
   menuIcon.style.height = "0%"
   document.querySelector('.menu-btns-background').style.display = 'none'
-  if(window.innerWidth > 768) document.querySelector('.menu-btns-background').style.display = 'none'
+  if (window.innerWidth > 768) document.querySelector('.menu-btns-background').style.display = 'none'
   window.onresize = function () {
     if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'none'
   }
@@ -40,11 +40,13 @@ function clickSmothLink() {
 
 // Scroll to Top button 
 function scrollFunction() {
-  if (toTopBtn) toTopBtn.style.display = (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none"
-  toTopBtn.addEventListener('click', () => window.scrollTo({
-    top: 1,
-    behavior: 'smooth',
-  }))
+  if (toTopBtn) {
+    toTopBtn.style.display = (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none"
+    toTopBtn.addEventListener('click', () => window.scrollTo({
+      top: 1,
+      behavior: 'smooth',
+    }))
+  }
 }
 
 window.onscroll = function () {
@@ -61,9 +63,9 @@ const card = document.querySelectorAll('.virtual-support-flip')
 const cardBtn = document.querySelectorAll('.virtural-card-btn')
 let cardsSupport = document.querySelectorAll('.support-card')
 
-for(let card of cardsSupport) {
-  card.style.WebkitBackfaceVisibility = "hidden"; // Code for Chrome, Safari, Opera
-  card.style.backfaceVisibility = "hidden";
+for (let card of cardsSupport) {
+  card.style.WebkitBackfaceVisibility = "hidden" // Code for Chrome, Safari, Opera
+  card.style.backfaceVisibility = "hidden"
 }
 
 function flipCard() {
@@ -79,14 +81,14 @@ function openPopUpWindow() {
   document.body.style.top = `-${window.scrollY}px`
   document.documentElement.style.overflowY = 'hidden'
   document.querySelector('.sticky').style.zIndex = '1'
-  toTopBtn.style.display = 'none'
+  if (toTopBtn) toTopBtn.style.display = 'none'
   consultancyDOM.classList.add('popup-container-active')
 }
 
 function closePopUpWindow() {
   document.documentElement.style.overflowY = 'auto'
   document.querySelector('.sticky').style.zIndex = '10000'
-  toTopBtn.style.display = 'block'
+  if (toTopBtn) toTopBtn.style.display = 'block'
   const scrollY = document.body.style.top
   window.scrollTo(0, parseInt(scrollY || '0') * -1)
   consultancyDOM.classList.remove('popup-container-active')
