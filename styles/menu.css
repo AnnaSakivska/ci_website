@@ -1,17 +1,15 @@
 .menu {
-  display: none;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  height: 0%;
   z-index: 99999;
   overflow-y: auto;
+  scrollbar-width: 0px;
   -webkit-overflow-scrolling: touch;
-}
-
-.menu-container {
-  min-height: 100%;
+  background-color: var(--purple);
+  transition: 0.5s;
 }
 
 .active-menu {
@@ -25,7 +23,10 @@
 .menu-background,
 .header-blue-back {
   background-color: var(--purple);
-  overflow-x: hidden;
+}
+
+.menu-background {
+  transition: transform 3s cubic-bezier(1, 0.5, 0, 1);
 }
 
 .clipped-area {
@@ -74,6 +75,10 @@
   transform: rotate(-45deg);
 }
 
+.menu-btns-background {
+  display: none;
+}
+
 @media only screen and (max-width: 767px) {
   .menu-background {
     min-height: 100vh;
@@ -86,6 +91,7 @@
   }
 
   .menu-btns-background {
+    display: none;
     position: fixed;
     width: 100vw;
     bottom: 0;
@@ -189,6 +195,8 @@
 .blog-fag {
   flex-direction: column;
   list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
   margin: 4rem auto;
   height: 14rem;
   width: 18rem;

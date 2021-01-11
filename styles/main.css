@@ -31,6 +31,7 @@ body {
 /* basic font-size - 1rem = 10px*/
 html {
   font-size: 62.5%;
+  /* margin-left: calc(100vw - 100%); */
 }
 
 .container {
@@ -353,10 +354,10 @@ textarea:focus {
   width: 6px;
   height: 6px;
   right: 0;
-  top: 60%;
+  top: 0;
   border-right: 2px solid #000000;
   border-top: 2px solid #000000;
-  transform: translateY(-60%) rotate(45deg);
+  transform: translateY(-2px) rotate(45deg);
 }
 
 .white-for-arrow::after {

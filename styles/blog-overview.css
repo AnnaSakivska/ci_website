@@ -5,6 +5,7 @@
 }
 
 .bx-wrapper {
+  box-shadow: none;
   margin-top: 14rem;
   border: none;
 }
@@ -190,7 +191,11 @@ div[class^='blog-picture'] {
 
 .big-combi-logo {
   position: absolute;
+  background: url('../assets/img/hexagon-blue-transparent.png') no-repeat center;
+  background-size: cover;
+  mix-blend-mode: multiply;
   height: 64.4rem;
+  width: 55.8rem;
   top: 3.6rem;
   left: -20rem;
   opacity: 0.8;

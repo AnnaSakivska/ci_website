@@ -1,29 +1,55 @@
 const menuIcon = document.querySelector('.menu')
+const menuContainer = document.querySelector('.menu-container')
 const commonComtainer = document.querySelector('.sticky-go-top-wrapper')
 const menuArrowUp = document.querySelector('.menu-arrow-up')
 const toTopBtn = document.querySelector('.toTop')
 
+// Menu
 function openMenu() {
+  window.onresize = function () {
+    if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'block'
+  }
+  if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'block'
+  menuIcon.style.height = "100%"
   if (menuArrowUp) menuArrowUp.style.display = 'none'
   document.documentElement.style.overflowY = 'hidden'
-  document.body.classList.add('menu-background')
   document.querySelector('.sticky').style.zIndex = '0'
   menuIcon.classList.add('active-menu')
 }
 
 function closeMenu() {
+  menuIcon.style.height = "0%"
+  document.querySelector('.menu-btns-background').style.display = 'none'
+  if(window.innerWidth > 768) document.querySelector('.menu-btns-background').style.display = 'none'
+  window.onresize = function () {
+    if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'none'
+  }
   if (menuArrowUp) menuArrowUp.style.display = 'block'
   document.documentElement.style.overflowY = 'auto'
-  document.body.classList.remove('menu-background')
   document.querySelector('.sticky').style.zIndex = '10000'
   menuIcon.classList.remove('active-menu')
+}
+
+// Scroll Anchors Smoothly
+function clickSmothLink() {
+  event.preventDefault()
+  const href = event.target.getAttribute("href")
+  const offsetTop = document.getElementsByName(href.substring(1))[0]
+  offsetTop.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 // Scroll to Top button 
 function scrollFunction() {
   if (toTopBtn) toTopBtn.style.display = (toTopBtn && document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none"
+  toTopBtn.addEventListener('click', () => window.scrollTo({
+    top: 1,
+    behavior: 'smooth',
+  }))
 }
-window.onscroll = function () { scrollFunction() }
+
+window.onscroll = function () {
+  scrollFunction()
+}
 
 function topFunction() {
   document.body.scrollTop = 0 // For Safari
@@ -33,6 +59,12 @@ function topFunction() {
 // Visual support 
 const card = document.querySelectorAll('.virtual-support-flip')
 const cardBtn = document.querySelectorAll('.virtural-card-btn')
+let cardsSupport = document.querySelectorAll('.support-card')
+
+for(let card of cardsSupport) {
+  card.style.WebkitBackfaceVisibility = "hidden"; // Code for Chrome, Safari, Opera
+  card.style.backfaceVisibility = "hidden";
+}
 
 function flipCard() {
   if (event.target.classList.contains('support-name')) event.target.parentNode.parentNode.classList.toggle('is-flipped')
@@ -51,7 +83,7 @@ function openPopUpWindow() {
   consultancyDOM.classList.add('popup-container-active')
 }
 
-function closePopUpWindow() { 
+function closePopUpWindow() {
   document.documentElement.style.overflowY = 'auto'
   document.querySelector('.sticky').style.zIndex = '10000'
   toTopBtn.style.display = 'block'

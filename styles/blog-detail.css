@@ -119,6 +119,8 @@
     position: relative;
     display: flex;
     align-items: center;
+    top: 0;
+    left: 0;
   }
 
   .blog-detail-media {

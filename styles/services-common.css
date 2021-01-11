@@ -624,7 +624,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: visible;
   backface-visibility: hidden;
 }
 

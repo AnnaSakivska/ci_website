@@ -49,6 +49,7 @@
   }
 
   .combinvest-info-wrapper {
+    grid-template-columns: 1fr;
     margin: 2rem 0;
     height: 34rem;
   }
@@ -164,6 +165,10 @@
   text-decoration: underline;
 }
 
+.jobs-wrapper button {
+  margin-top: 1rem;
+}
+
 /* The team */
 .team-container {
   overflow: hidden;
@@ -197,6 +202,26 @@
 
 .team-btns > * {
   margin-right: 3rem;
+}
+
+.arrows-scroll {
+  user-select: none;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.arrows-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.arrow-scroll-left {
+  display: none;
+  margin-right: 2rem;
+  transform: rotateY(-180deg);
 }
 
 .team {
@@ -281,10 +306,10 @@
   height: 20.8rem;
   width: 18rem;
   align-items: center;
-  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-  -webkit-clip-path: url('#foundationMark');
   clip-path: url('#foundationMark');
+  -webkit-clip-path: url('#foundationMark');
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   z-index: 1;
 }
 

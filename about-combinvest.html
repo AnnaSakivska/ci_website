@@ -17,7 +17,7 @@
     <div class="container header">
       <a href="./home.html"><img src="./assets/img/logo.svg" alt="logo" class="logo"></a>
       <ul class="header-navbar">
-        <li><a class="btn primary-dark-btn academy-btn blue-border-btn b-screens-only" href="./academy.html">Academy</a></li>
+        <li><a class="btn secondary-light-btn blue-border-btn b-screens-only" href="./academy.html">Academy</a></li>
         <li><a class="btn primary-light-btn cockpit-btn b-screens-only" href="">Login MyCockpit</a></li>
         <li class="flex-wrapper flex-center"><a class="montserrat-18 bold-text de-option b-screens-only" href="">DE</a>
           <a class="b-screens-only arrow-down-link" href=""><span class="menu-arrow-down big-screens-only"></span></a>
@@ -129,7 +129,7 @@
     <!-- Jobs -->
     <div class="flex-wrapper flex-center margin-top-11 jobs-wrapper">
       <div class="arrow-down"></div>
-      <h2 class="cup subhead-title-25 bold-text white-text link-darkblue"><a href="./job-offer.html">WE'RE HIRING</a></h2>
+      <h2 class="cup subhead-title-25 bold-text white-text">WE'RE HIRING</h2>
       <h4 class="cup montserrat-16 semibold-text white-text link-darkblue"><a href="./job-offer.html">Jobs</a></h4>
       <h3 class="montserrat-16 bold-text white-text link-darkblue"><a href="./job-offer.html">Kundenberater/in 80-100%</a></h3>
       <h3 class="montserrat-16 bold-text white-text link-darkblue"><a href="./job-offer.html">Assistent/in GL 80-100%</a></h3>
@@ -150,7 +150,10 @@
               <button class="cup btn secondary-light-btn team-btn">Betrieb</button>
               <button class="cup btn secondary-light-btn team-btn">Kundenberater</button>
             </div>
-            <span class="b-screens-only cup arrow-scroll" href=""><span class="arrow-right purple-arrow"></span></span>
+            <div class="b-screens-only arrows-scroll">
+              <span class="cup arrow-scroll-left"><span class="arrow-right purple-arrow"></span></span>
+              <span class="cup arrow-scroll"><span class="arrow-right purple-arrow"></span></span>
+            </div>
             <h3 class="s-screens-only montserrat-18 extrabold-text darkblue-text">Geschäftsleitung</h3>
           </div> 
           <div class="flex-wrapper team" id="team">
@@ -172,7 +175,7 @@
               <h4 class="montserrat-18">Geschäftsführer</h4>
               <span class="montserrat-16"><a href="mailto:a.nachname@combinvest.ch">a.nachname@combinvest.ch</a></span>
             </div>
-            <div class="flex-wrapper team-specialist">
+            <div class="flex-wrapper team-specialist">  
               <div class="team-specialist-2"></div>
               <h3 class="subhead-title-25 uppercase darkblue-text">Daniel Hamze</h3>
               <h4 class="montserrat-18">Geschäftsführer</h4>
@@ -185,7 +188,19 @@
               <span class="montserrat-16"><a href="mailto:a.nachname@combinvest.ch">a.nachname@combinvest.ch</a></span>
             </div>
             <div class="flex-wrapper team-specialist">
-              <div class="team-specialist-3"></div>
+              <div class="team-specialist-3">
+                <div class="b-screens-only foundation-mark foundation-black">
+                  <svg>
+                    <defs>
+                      <clipPath id="foundationMark" clipPathUnits="objectBoundingBox">
+                        <polygon points="0 0.25, 0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <h3 class="montserrat-38 white-text extrabold-text">2014</h3>
+                  <span class="montserrat-14 uppercase extrabold-text ">Gründung</span>
+                </div>
+              </div>
               <h3 class="subhead-title-25 uppercase darkblue-text">Daniel Hamze</h3>
               <h4 class="montserrat-18">Geschäftsführer</h4>
               <span class="montserrat-16"><a href="mailto:a.nachname@combinvest.ch">a.nachname@combinvest.ch</a></span>
@@ -336,7 +351,7 @@
   </div>
   
   <!-- Menu -->
-  <div class="menu menu-background">
+  <div class="menu">
     <div class="container menu-container">
       <div class="clipped-area">
         <div class="header header-blue-back">
@@ -484,21 +499,19 @@
             </a></li>
           </ul>
         </div>
-        <ul class="flex-wrapper flex-center subhead-title-25 white-text blog-fag">
-          <li class="link-darkblue"><a href="./about-combinvest.html"></a>Combinvest</a></li>
+        <ul class="flex-wrapper subhead-title-25 white-text blog-fag">
+          <li class="link-darkblue"><a href="./about-combinvest.html">Combinvest</a></li>
           <li class="link-darkblue"><a href="./blog-overview.html">Blog</a></li>
           <li class="link-darkblue"><a href="">FAQ</a></li>
           <li class="link-darkblue"><a href="./servicepackages.html">Servicepakete</a></li>
         </ul>
         <button class="b-screens-only btn primary-dark-btn trinveso-btn">Triveso</button>
       </div>
-
       <div class="b-screens-only montserrat-16 semibold-text white-text contacts">
         <span class="">Station-Ost 7</span>
         <span class="">CH-6023 Rothenburg</span>
         <a href="tel:+41625611122">+41 62 561 11 22</a> 
       </div>
-
       <div class="b-screens-only jobs">
         <div class="jobs-triangle">
           <div class="jobs-links">
@@ -508,8 +521,7 @@
           </div>
         </div>
       </div>
-
-      <ul class="s-screens-only  menu-btns-background">
+      <ul class="menu-btns-background">
         <li class="menu-academy-btn"><a class="btn primary-light-btn academy-btn white-border-btn" href="./academy.html">Academy</a></li>
         <li class="menu-cockpit-btn"><a class="btn primary-dark-btn cockpit-btn" href="">Login MyCockpit</a></li>
       </ul>
