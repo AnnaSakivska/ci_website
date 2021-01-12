@@ -415,5 +415,9 @@
   .foundation-mark-text > span {
     text-decoration: none;
   }
+
+  .foundation-mark-text > h3 {
+    text-align: center;
+  }
 }
 /* End of the team */
