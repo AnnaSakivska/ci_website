@@ -624,8 +624,13 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  /* -webkit-backface-visibility: visible;
-  backface-visibility: hidden; */
+  -webkit-perspective: 0;
+  perspective: 0;
+  -webkit-backface-visibility: hidden;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
 }
 
 div[class^='support-picture'] {
@@ -1012,4 +1017,3 @@ div[class^='review-picture'] {
   }
 }
 /* End of Reviews container */
-
