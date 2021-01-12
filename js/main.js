@@ -6,9 +6,7 @@ const toTopBtn = document.querySelector('.toTop')
 
 // Menu
 function openMenu() {
-  window.onresize = function () {
-    if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'block'
-  }
+  window.onresize = () => {if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'block'}
   if (window.innerWidth < 768) document.querySelector('.menu-btns-background').style.display = 'block'
   menuIcon.style.height = "100%"
   if (menuArrowUp) menuArrowUp.style.display = 'none'
@@ -92,6 +90,7 @@ function closePopUpWindow() {
   const scrollY = document.body.style.top
   window.scrollTo(0, parseInt(scrollY || '0') * -1)
   consultancyDOM.classList.remove('popup-container-active')
+  console.log(consultancyDOM)
 }
 
 // Slider

@@ -30,7 +30,6 @@ arrowScrollLeftDOM.addEventListener('click', () => {
   teamContainerDOM.scrollLeft -= specialistContainerDOM.offsetWidth
   if (teamContainerDOM.scrollLeft < specialistContainerDOM.offsetWidth) {
     showArrowLeft()
-    // arrowScrollLeftDOM.style.display = 'none'
     teamContainerDOM.scrollLeft -= specialistContainerDOM.offsetWidth
   }
 })
@@ -39,10 +38,8 @@ arrowScrollLeftDOM.addEventListener('click', () => {
 function showArrowLeft() {
   if (teamContainerDOM.scrollLeft >= specialistContainerDOM.offsetWidth) {
     arrowScrollLeftDOM.style.display = 'inline-block'
-    arrowsContainerDOM.style.flexDirection = 'column'
   } else {
     arrowScrollLeftDOM.style.display = 'none'
-    arrowsContainerDOM.style.flexDirection = 'row'
   }
 }
 

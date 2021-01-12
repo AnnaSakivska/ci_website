@@ -180,20 +180,23 @@
 
 .team-departments .arrow-right {
   width: 10.4rem;
+  height: 3px;
   transform: translateY(-200%);
 }
 
 .team-departments .arrow-right::after {
-  width: 10px;
-  height: 10px;
-  transform: translateY(-4px) rotate(45deg);
+  width: 14px;
+  height: 14px;
+  transform: translateY(-6px) rotate(45deg);
+  border-right: 3px solid var(--purple);
+  border-top: 3px solid var(--purple);
 }
 
 .team-btns {
   display: grid;
-    grid-template-columns: repeat(4, max-content);
-    grid-gap: 3rem;
-    margin-right: 3rem;
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: 3rem;
+  margin-right: 3rem;
 }
 
 .team-btn-active {
@@ -202,10 +205,12 @@
 }
 
 .arrows-scroll {
+  margin-left: 10rem;
   user-select: none;
   height: 8rem;
   user-select: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -213,7 +218,8 @@
 
 .arrow-scroll-left {
   display: none;
-  margin-left: -2rem;
+  margin-right: 5rem;
+  margin-left: -1rem;
   transform: rotateY(-180deg);
 }
 
@@ -277,15 +283,8 @@
   margin: 3rem 0 1rem;
 }
 
-.foundation-mark > span {
+.foundation-mark-text {
   position: absolute;
-  top: 60%;
-}
-
-.foundation-mark > h3 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .foundation-mark {
@@ -413,7 +412,7 @@
     clip-path: url('#foundationAdvisor');
   }
 
-  .foundation-mark > span {
+  .foundation-mark-text > span {
     text-decoration: none;
   }
 }

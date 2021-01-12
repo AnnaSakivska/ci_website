@@ -31,7 +31,6 @@ body {
 /* basic font-size - 1rem = 10px*/
 html {
   font-size: 62.5%;
-  /* margin-left: calc(100vw - 100%); */
 }
 
 .container {
@@ -489,16 +488,23 @@ textarea:focus {
   box-shadow: 1px 41px 26px -17px rgba(0, 0, 0, 0.65);
 }
 
-.cookies-popup {
+.popup {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 55rem;
   width: 80rem;
 }
 
-.cookies-popup img {
+.popup {
+  height: 50rem;
+}
+
+.cookies-popup {
+  height: 55rem;
+}
+
+.popup-window img {
   margin: 6rem auto 2rem;
   height: 6rem;
   width: 5.2rem;
@@ -515,11 +521,11 @@ textarea:focus {
   margin: 6.2rem auto 3rem;
 }
 
-.cookies-popup > h2 {
-  margin: 0 0 3rem;
+.popup > h2 {
+  margin: 0 0 4rem;
 }
 
-.cookies-popup > p {
+.popup > p {
   max-width: 58.6rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -614,7 +620,7 @@ textarea:focus {
     min-height: 55rem;
   }
 
-  .cookies-popup img {
+  .popup > img {
     height: 46px;
     width: 40px;
   }
@@ -623,7 +629,7 @@ textarea:focus {
     font-size: 18px;
   }
 
-  .cookies-popup h2 {
+  .popup h2 {
     font-size: 12px;
   }
 
