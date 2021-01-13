@@ -387,12 +387,13 @@ div[class^='blog-review-small-'] {
 
   .big-combi-logo {
     height: 14rem;
+    width: 12rem;
     left: -3rem;
   }
 
   .blog-review,
   .blog-review-big,
-  div[class^='blog-review-small-'] {
+  a[class^='blog-review-small-'] {
     height: 28rem;
     width: 100%;
     max-width: 40rem;

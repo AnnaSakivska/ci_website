@@ -224,6 +224,7 @@ div[class$='package-img'] {
 
   .tooltip-active {
     display: inline-block;
+    overflow: auto;
   }
 
   .close-tooptip {

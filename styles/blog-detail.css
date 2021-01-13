@@ -215,8 +215,9 @@
   }
 
   .detail-reading-theme {
-    width: max-content;
-    height: max-content;
+    width: fit-content;
+    min-width: 9rem;
+    max-height: 2rem;
   }
 
   .detail-review-text {
@@ -239,6 +240,8 @@
 
   .blog-detail-reviews {
     padding-bottom: 0;
+    max-width: 40rem;
+    margin: 0 auto;
   }
 
   /* for center slick slider */
