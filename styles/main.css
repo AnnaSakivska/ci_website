@@ -637,6 +637,10 @@ textarea:focus {
     font-size: 12px;
   }
 
+  .cookies-benefits {
+    display: none;
+  }
+
   .cookies-btns {
     margin: 0;
     width: 100%;

@@ -106,6 +106,10 @@
     margin-top: 0px;
   }
 
+  .media-wrapper {
+    margin-bottom: 2rem;
+  }
+
   .footer__contact {
     width: 332px;
   }
@@ -137,6 +141,11 @@
     margin-bottom: 24px;
   }
 
+  .media-wrapper {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .footer__contact {
     width: 100%;
   }
@@ -161,7 +170,8 @@
   }
 
   .footer__logo {
-    margin: 24px 0 0 0;
+    margin: 3rem 0 0 0;
+    padding-top: 3rem;
     align-self: flex-start;
   }
 
